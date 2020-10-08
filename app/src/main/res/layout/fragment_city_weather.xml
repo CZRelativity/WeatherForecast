@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CityWeatherFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/frag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/frag_tv_currentTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25℃"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/frag_tv_city"
+                style="@style/weatherText"
+                android:layout_below="@+id/frag_tv_currentTemperature"
+                android:text="北京" />
+
+            <TextView
+                android:id="@+id/frag_tv_weather"
+                style="@style/weatherText"
+                android:layout_below="@+id/frag_tv_city"
+                android:text="晴" />
+
+            <TextView
+                android:id="@+id/frag_tv_date"
+                style="@style/weatherText"
+                android:layout_below="@+id/frag_tv_weather"
+                android:layout_marginTop="25dp"
+                android:text="2020-9-10" />
+
+            <TextView
+                android:id="@+id/frag_tv_wind"
+                style="@style/weatherText"
+                android:layout_below="@id/frag_tv_date"
+                android:text="东北风3-4级" />
+
+            <TextView
+                android:id="@+id/frag_tv_divide"
+                android:layout_width="2dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@id/frag_tv_wind"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@id/frag_tv_wind"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/frag_tv_dayTemperature"
+                style="@style/weatherText"
+                android:layout_alignBottom="@id/frag_tv_wind"
+                android:layout_toEndOf="@id/frag_tv_divide"
+                android:text="31~25℃" />
+
+            <ImageView
+                android:id="@+id/frag_iv_weather"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/icon" />
+        </RelativeLayout>
+
+        <!--        用于显示未来三天的天气情况-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/frag_bg"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/frag_bg"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/frag_tv_index_wearing"
+                    style="@style/indexText"
+                    android:drawableBottom="@mipmap/icon_cloth"
+                    android:text="穿衣指数" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000" />
+
+                <TextView
+                    android:id="@+id/frag_tv_index_carWashing"
+                    style="@style/indexText"
+                    android:drawableBottom="@mipmap/icon_car"
+                    android:text="洗车指数" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000" />
+
+                <TextView
+                    android:id="@+id/frag_tv_index_flu"
+                    style="@style/indexText"
+                    android:drawableBottom="@mipmap/icon_flu"
+                    android:text="感冒指数" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/frag_tv_index_sport"
+                    style="@style/indexText"
+                    android:drawableBottom="@mipmap/icon_sport"
+                    android:text="运动指数" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000" />
+
+                <TextView
+                    android:id="@+id/frag_tv_index_light"
+                    style="@style/indexText"
+                    android:drawableBottom="@mipmap/icon_light"
+                    android:text="紫外线指数" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000" />
+
+                <TextView style="@style/indexText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
