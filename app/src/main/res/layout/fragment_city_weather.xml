@@ -7,7 +7,6 @@
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
-        android:id="@+id/frag_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@mipmap/bg"
@@ -78,6 +77,7 @@
 
         <!--        用于显示未来三天的天气情况-->
         <LinearLayout
+            android:id="@+id/frag_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
