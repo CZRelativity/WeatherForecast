@@ -39,13 +39,14 @@ public class CityWeatherFragment extends Fragment implements Callback.CommonCall
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private static final String PROVINCE="PROVINCE";
     private static final String CITY = "CITY";
     //private static final String ARG_PARAM2 = "param2";
 
     // TODO: Rename and change types of parameters
     private String mCity;
+    private String mProvince;
     TencentWeatherBean.DataBean.IndexBean indexBean;
-//    private List<?> indexList;
     //private String mParam2;
 
     public CityWeatherFragment() {
@@ -57,15 +58,16 @@ public class CityWeatherFragment extends Fragment implements Callback.CommonCall
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param cityString 要获取天气信息的城市
+     * @param location 省、市，腾讯天气api格式
      * @return A new instance of fragment CityWeatherFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static CityWeatherFragment newInstance(String cityString) {
+    public static CityWeatherFragment newInstance(String[] location){
         CityWeatherFragment fragment = new CityWeatherFragment();
         Bundle args = new Bundle();
         //Bundle().putString(key,value)
-        args.putString(CITY, cityString);
+        args.putString(PROVINCE,location[0]);
+        args.putString(CITY, location[1]);
         //args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
@@ -77,6 +79,7 @@ public class CityWeatherFragment extends Fragment implements Callback.CommonCall
         if (getArguments() != null) {
             //getArguments().getString(key)
             mCity = getArguments().getString(CITY);
+            mProvince = getArguments().getString(PROVINCE);
             //mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
@@ -88,7 +91,7 @@ public class CityWeatherFragment extends Fragment implements Callback.CommonCall
         View view = inflater.inflate(R.layout.fragment_city_weather, container, false);
         initiateView(view);
         // 拼接uri，通过传入xutils框架发出http请求
-        String uri = uriProvince + mCity + uriCity + mCity;
+        String uri = uriProvince + mProvince + uriCity + mCity;
         loadData(uri);
         return view;
     }
@@ -159,6 +162,7 @@ public class CityWeatherFragment extends Fragment implements Callback.CommonCall
         future_layout = view.findViewById(R.id.frag_layout);
     }
 
+    //继承View.OnClickListener然后重写onClick()方法的机制失效？
 //    @Override
 //    public void onClick(View v) {
 //        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -225,7 +229,8 @@ public class CityWeatherFragment extends Fragment implements Callback.CommonCall
         TencentWeatherBean tencentWeatherBean = new Gson().fromJson(result, TencentWeatherBean.class);
 
         TencentWeatherBean.DataBean.Forecast24hBean weekForecast = tencentWeatherBean.getData().getForecast_24h();
-        TencentWeatherBean.DataBean.Forecast24hBean._$0Bean dayForecast = weekForecast.get_$0();
+        //腾讯天气api，day0居然是昨天，我？？？
+        TencentWeatherBean.DataBean.Forecast24hBean._$1Bean dayForecast = weekForecast.get_$1();
         TencentWeatherBean.DataBean.ObserveBean currentObserve = tencentWeatherBean.getData().getObserve();
 
         //获取指数信息集合列表
@@ -248,7 +253,6 @@ public class CityWeatherFragment extends Fragment implements Callback.CommonCall
         //设置显示的天气图片，Picasso框架，with(context).load(uri/path).into(view)
         Picasso.with(getActivity()).load(TencentWeatherBeanUtil.getWeatherPictureUrl(dayForecast.getDay_weather())).into(iv_weather);
 
-        parseDay1(weekForecast);
         parseDay2(weekForecast);
         parseDay3(weekForecast);
         parseDay4(weekForecast);

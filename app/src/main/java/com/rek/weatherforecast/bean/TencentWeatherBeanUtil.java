@@ -2,6 +2,7 @@ package com.rek.weatherforecast.bean;
 
 public class TencentWeatherBeanUtil {
 
+    //这个图片又是从百度天气api piao的[笑哭]
     public static String getWeatherPictureUrl(String weather){
         StringBuilder url=new StringBuilder("http://api.map.baidu.com/images/weather/day/");
         String s="";

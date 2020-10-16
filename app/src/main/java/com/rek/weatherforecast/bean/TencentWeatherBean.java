@@ -5,10 +5,11 @@ import com.google.gson.annotations.SerializedName;
 public class TencentWeatherBean {
 
     /**
-     * data : {"air":{"aqi":31,"aqi_level":1,"aqi_name":"优","co":"0.6","no2":"29","o3":"70","pm10":"31","pm2.5":"13","so2":"5","update_time":"20200926190000"},"alarm":{},"forecast_24h":{"0":{"day_weather":"多云","day_weather_code":"01","day_weather_short":"多云","day_wind_direction":"东北风","day_wind_direction_code":"1","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"20","night_weather":"阴","night_weather_code":"02","night_weather_short":"阴","night_wind_direction":"南风","night_wind_direction_code":"4","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-25"},"1":{"day_weather":"阴","day_weather_code":"02","day_weather_short":"阴","day_wind_direction":"东风","day_wind_direction_code":"2","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"20","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-26"},"2":{"day_weather":"阴","day_weather_code":"02","day_weather_short":"阴","day_wind_direction":"南风","day_wind_direction_code":"4","day_wind_power":"3","day_wind_power_code":"0","max_degree":"25","min_degree":"20","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-27"},"3":{"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"27","min_degree":"20","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-28"},"4":{"day_weather":"多云","day_weather_code":"01","day_weather_short":"多云","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"20","night_weather":"晴","night_weather_code":"00","night_weather_short":"晴","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-29"},"5":{"day_weather":"晴","day_weather_code":"00","day_weather_short":"晴","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"19","night_weather":"晴","night_weather_code":"00","night_weather_short":"晴","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-30"},"6":{"day_weather":"晴","day_weather_code":"00","day_weather_short":"晴","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"19","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-01"},"7":{"day_weather":"多云","day_weather_code":"01","day_weather_short":"多云","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"19","night_weather":"阴","night_weather_code":"02","night_weather_short":"阴","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-02"}},"index":{"airconditioner":{"detail":"您将感到很舒适，一般不需要开启空调。","info":"较少开启","name":"空调开启"},"allergy":{"detail":"天气条件易诱发过敏，宜穿长衣长裤并佩戴好眼镜和口罩，外出归来时及时清洁手和口鼻。","info":"易发","name":"过敏"},"carwash":{"detail":"适宜洗车，未来持续两天无雨天气较好，适合擦洗汽车，蓝天白云、风和日丽将伴您的车子连日洁净。","info":"适宜","name":"洗车"},"chill":{"detail":"温度未达到风寒所需的低温，稍作防寒准备即可。","info":"无","name":"风寒"},"clothes":{"detail":"建议着长袖T恤、衬衫加单裤等服装。年老体弱者宜着针织长袖衬衫、马甲和长裤。","info":"舒适","name":"穿衣"},"cold":{"detail":"天气转凉，空气湿度较大，较易发生感冒，体质较弱的朋友请注意适当防护。","info":"较易发","name":"感冒"},"comfort":{"detail":"白天温度适宜，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。","info":"舒适","name":"舒适度"},"diffusion":{"detail":"气象条件对空气污染物稀释、扩散和清除无明显影响。","info":"中","name":"空气污染扩散条件"},"dry":{"detail":"天气较好，路面比较干燥，路况较好。","info":"干燥","name":"路况"},"drying":{"detail":"天气不错，适宜晾晒。赶紧把久未见阳光的衣物搬出来吸收一下太阳的味道吧！","info":"适宜","name":"晾晒"},"fish":{"detail":"较适合垂钓，但风力稍大，会对垂钓产生一定的影响。","info":"较适宜","name":"钓鱼"},"heatstroke":{"detail":"天气不热，在炎炎夏日中十分难得，可以告别暑气漫漫啦~","info":"无中暑风险","name":"中暑"},"makeup":{"detail":"建议用蜜质SPF20面霜打底，水质无油粉底霜。","info":"去油防晒","name":"化妆"},"mood":{"detail":"天气较好，温度适宜，心情会不错，学习、工作效率较高。","info":"较好","name":"心情"},"morning":{"detail":"早晨气象条件较适宜晨练，但风力稍大，晨练时请注意选择避风的地点，避免迎风锻炼。","info":"较适宜","name":"晨练"},"sports":{"detail":"天气较好，赶快投身大自然参与户外运动，尽情感受运动的快乐吧。","info":"适宜","name":"运动"},"sunglasses":{"detail":"白天虽有白云遮挡，但太阳辐射仍很强，建议佩戴透射比2级且标注UV400的遮阳镜","info":"很必要","name":"太阳镜"},"sunscreen":{"detail":"紫外辐射极强，应特别加强防护，建议涂擦SPF20以上，PA++的防晒护肤品，并随时补涂。","info":"极强","name":"防晒"},"time":"20200926","tourism":{"detail":"天气较好，但丝毫不会影响您出行的心情。温度适宜又有微风相伴，适宜旅游。","info":"适宜","name":"旅游"},"traffic":{"detail":"天气较好，路面干燥，交通气象条件良好，车辆可以正常行驶。","info":"良好","name":"交通"},"ultraviolet":{"detail":"紫外线辐射极强，建议涂擦SPF20以上、PA++的防晒护肤品，尽量避免暴露于日光下。","info":"很强","name":"紫外线强度"},"umbrella":{"detail":"天气较好，不会降水，因此您可放心出门，无须带雨伞。","info":"不带伞","name":"雨伞"}},"observe":{"degree":"23","humidity":"66","precipitation":"0.0","pressure":"1015","update_time":"202009261940","weather":"多云","weather_code":"01","weather_short":"多云","wind_direction":"8","wind_power":"0"},"rise":{"0":{"sunrise":"05:44","sunset":"17:45","time":"20200926"},"1":{"sunrise":"05:45","sunset":"17:44","time":"20200927"},"10":{"sunrise":"05:51","sunset":"17:33","time":"20201006"},"11":{"sunrise":"05:51","sunset":"17:31","time":"20201007"},"12":{"sunrise":"05:52","sunset":"17:30","time":"20201008"},"13":{"sunrise":"05:53","sunset":"17:29","time":"20201009"},"14":{"sunrise":"05:53","sunset":"17:28","time":"20201010"},"15":{"sunrise":"","sunset":"","time":"20200925"},"2":{"sunrise":"05:46","sunset":"17:43","time":"20200928"},"3":{"sunrise":"05:46","sunset":"17:41","time":"20200929"},"4":{"sunrise":"05:47","sunset":"17:40","time":"20200930"},"5":{"sunrise":"05:47","sunset":"17:39","time":"20201001"},"6":{"sunrise":"05:48","sunset":"17:38","time":"20201002"},"7":{"sunrise":"05:49","sunset":"17:36","time":"20201003"},"8":{"sunrise":"05:49","sunset":"17:35","time":"20201004"},"9":{"sunrise":"05:50","sunset":"17:34","time":"20201005"}},"tips":{"observe":{"0":"光芒透过云缝，洒向大地~","1":"现在的温度比较舒适~"}}}
+     * data : {"air":{"aqi":14,"aqi_level":1,"aqi_name":"优","co":"0.6","no2":"27","o3":"25","pm10":"14","pm2.5":"9","so2":"6","update_time":"20201015130000"},"alarm":{},"forecast_24h":{"0":{"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"19","min_degree":"15","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-14"},"1":{"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"16","min_degree":"14","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-15"},"2":{"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西北风","day_wind_direction_code":"7","day_wind_power":"3","day_wind_power_code":"0","max_degree":"15","min_degree":"14","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-16"},"3":{"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"东北风","day_wind_direction_code":"1","day_wind_power":"3","day_wind_power_code":"0","max_degree":"16","min_degree":"13","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"南风","night_wind_direction_code":"4","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-17"},"4":{"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西南风","day_wind_direction_code":"5","day_wind_power":"3","day_wind_power_code":"0","max_degree":"17","min_degree":"12","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-18"},"5":{"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"东风","day_wind_direction_code":"2","day_wind_power":"3","day_wind_power_code":"0","max_degree":"17","min_degree":"14","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"东北风","night_wind_direction_code":"1","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-19"},"6":{"day_weather":"阴","day_weather_code":"02","day_weather_short":"阴","day_wind_direction":"南风","day_wind_direction_code":"4","day_wind_power":"3","day_wind_power_code":"0","max_degree":"18","min_degree":"14","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"南风","night_wind_direction_code":"4","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-20"},"7":{"day_weather":"多云","day_weather_code":"01","day_weather_short":"多云","day_wind_direction":"东北风","day_wind_direction_code":"1","day_wind_power":"3","day_wind_power_code":"0","max_degree":"19","min_degree":"15","night_weather":"晴","night_weather_code":"00","night_weather_short":"晴","night_wind_direction":"东北风","night_wind_direction_code":"1","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-21"}},"index":{"airconditioner":{"detail":"您将感到很舒适，一般不需要开启空调。","info":"较少开启","name":"空调开启"},"allergy":{"detail":"天气条件易诱发过敏，有降水，最好穿长衣长裤，预防感冒可能引发的过敏。","info":"易发","name":"过敏"},"carwash":{"detail":"不宜洗车，未来24小时内有雨，如果在此期间洗车，雨水和路上的泥水可能会再次弄脏您的爱车。","info":"不宜","name":"洗车"},"chill":{"detail":"温度未达到风寒所需的低温，稍作防寒准备即可。","info":"无","name":"风寒"},"clothes":{"detail":"建议着厚外套加毛衣等服装。年老体弱者宜着大衣、呢外套加羊毛衫。","info":"较冷","name":"穿衣"},"cold":{"detail":"易发生感冒，体质较弱的朋友请注意适当防护。","info":"易发","name":"感冒"},"comfort":{"detail":"白天会有降雨，人们会感到有些凉意，但大部分人完全可以接受。","info":"较舒适","name":"舒适度"},"diffusion":{"detail":"气象条件有利于空气污染物稀释、扩散和清除。","info":"良","name":"空气污染扩散条件"},"dry":{"detail":"有降水，路面潮湿，车辆易打滑，请小心驾驶。","info":"潮湿","name":"路况"},"drying":{"detail":"有降水，不适宜晾晒。若需要晾晒，请在室内准备出充足的空间。","info":"不宜","name":"晾晒"},"fish":{"detail":"天气不好，有风，不适合垂钓。","info":"不宜","name":"钓鱼"},"heatstroke":{"detail":"天气舒适，令人神清气爽的一天，不用担心中暑的困扰。","info":"无中暑风险","name":"中暑"},"makeup":{"detail":"风力不大，建议用中性保湿型霜类化妆品，无需选用防晒化妆品。","info":"保湿","name":"化妆"},"mood":{"detail":"有降水，雨水可能会使心绪无端地挂上轻愁，与其因下雨而无精打采，不如放松心情，好好欣赏一下雨景。你会发现雨中的世界是那般洁净温和、清新葱郁。","info":"较差","name":"心情"},"morning":{"detail":"有较强降水，风力稍大，请避免户外晨练，建议在室内做适当锻炼，保持身体健康。","info":"不宜","name":"晨练"},"sports":{"detail":"有降水，推荐您在室内进行各种健身休闲运动，若坚持户外运动，须注意保暖并携带雨具。","info":"较不宜","name":"运动"},"sunglasses":{"detail":"白天有降水天气，视线较差，不需要佩戴太阳镜","info":"不需要","name":"太阳镜"},"sunscreen":{"detail":"属弱紫外辐射天气，长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","info":"弱","name":"防晒"},"time":"20201015","tourism":{"detail":"温度适宜，又有较弱降水和微风作伴，会给您的旅行带来意想不到的景象，适宜旅游，可不要错过机会呦！","info":"适宜","name":"旅游"},"traffic":{"detail":"有降水，路面湿滑，刹车距离延长，事故易发期，注意车距，务必小心驾驶。","info":"一般","name":"交通"},"ultraviolet":{"detail":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","info":"最弱","name":"紫外线强度"},"umbrella":{"detail":"有降水，请带上雨伞，如果你喜欢雨中漫步，享受大自然给予的温馨和快乐，在短时间外出可收起雨伞。","info":"带伞","name":"雨伞"}},"observe":{"degree":"17","humidity":"88","precipitation":"0.3","pressure":"991.0","update_time":"202010151330","weather":"雨","weather_code":"301","weather_short":"雨","wind_direction":"3","wind_power":"1"},"rise":{"0":{"sunrise":"06:55","sunset":"18:23","time":"20201015"},"1":{"sunrise":"06:56","sunset":"18:22","time":"20201016"},"10":{"sunrise":"07:02","sunset":"18:13","time":"20201025"},"11":{"sunrise":"07:02","sunset":"18:12","time":"20201026"},"12":{"sunrise":"07:03","sunset":"18:11","time":"20201027"},"13":{"sunrise":"07:04","sunset":"18:10","time":"20201028"},"14":{"sunrise":"07:05","sunset":"18:09","time":"20201029"},"15":{"sunrise":"","sunset":"","time":"20201014"},"2":{"sunrise":"06:56","sunset":"18:21","time":"20201017"},"3":{"sunrise":"06:57","sunset":"18:20","time":"20201018"},"4":{"sunrise":"06:58","sunset":"18:19","time":"20201019"},"5":{"sunrise":"06:58","sunset":"18:18","time":"20201020"},"6":{"sunrise":"06:59","sunset":"18:17","time":"20201021"},"7":{"sunrise":"07:00","sunset":"18:16","time":"20201022"},"8":{"sunrise":"07:00","sunset":"18:15","time":"20201023"},"9":{"sunrise":"07:01","sunset":"18:14","time":"20201024"}},"tips":{"observe":{"0":"下雨了，出门记得带伞~","1":"现在的温度比较凉爽~"}}}
      * message : OK
      * status : 200
      */
+
     private DataBean data;
     private String message;
     private int status;
@@ -37,43 +38,15 @@ public class TencentWeatherBean {
         this.status = status;
     }
 
-    public static String getWeatherPictureUrl(String weather){
-        StringBuilder url=new StringBuilder("http://api.map.baidu.com/images/weather/day/");
-        String s="";
-        switch(weather){
-            case "晴":
-                s="qing";
-                break;
-            case "阴":
-                s="yin";
-                break;
-            case "多云":
-                s="duoyun";
-                break;
-            case "小雨":
-                s="xiaoyu";
-                break;
-            case "中雨":
-                s="zhongyu";
-                break;
-            case "大雨":
-                s="dayu";
-                break;
-            default:
-                break;
-        }
-        return url.append(s).append(".png").toString();
-    }
-
     public static class DataBean {
         /**
-         * air : {"aqi":31,"aqi_level":1,"aqi_name":"优","co":"0.6","no2":"29","o3":"70","pm10":"31","pm2.5":"13","so2":"5","update_time":"20200926190000"}
+         * air : {"aqi":14,"aqi_level":1,"aqi_name":"优","co":"0.6","no2":"27","o3":"25","pm10":"14","pm2.5":"9","so2":"6","update_time":"20201015130000"}
          * alarm : {}
-         * forecast_24h : {"0":{"day_weather":"多云","day_weather_code":"01","day_weather_short":"多云","day_wind_direction":"东北风","day_wind_direction_code":"1","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"20","night_weather":"阴","night_weather_code":"02","night_weather_short":"阴","night_wind_direction":"南风","night_wind_direction_code":"4","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-25"},"1":{"day_weather":"阴","day_weather_code":"02","day_weather_short":"阴","day_wind_direction":"东风","day_wind_direction_code":"2","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"20","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-26"},"2":{"day_weather":"阴","day_weather_code":"02","day_weather_short":"阴","day_wind_direction":"南风","day_wind_direction_code":"4","day_wind_power":"3","day_wind_power_code":"0","max_degree":"25","min_degree":"20","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-27"},"3":{"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"27","min_degree":"20","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-28"},"4":{"day_weather":"多云","day_weather_code":"01","day_weather_short":"多云","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"20","night_weather":"晴","night_weather_code":"00","night_weather_short":"晴","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-29"},"5":{"day_weather":"晴","day_weather_code":"00","day_weather_short":"晴","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"19","night_weather":"晴","night_weather_code":"00","night_weather_short":"晴","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-30"},"6":{"day_weather":"晴","day_weather_code":"00","day_weather_short":"晴","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"19","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-01"},"7":{"day_weather":"多云","day_weather_code":"01","day_weather_short":"多云","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"19","night_weather":"阴","night_weather_code":"02","night_weather_short":"阴","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-02"}}
-         * index : {"airconditioner":{"detail":"您将感到很舒适，一般不需要开启空调。","info":"较少开启","name":"空调开启"},"allergy":{"detail":"天气条件易诱发过敏，宜穿长衣长裤并佩戴好眼镜和口罩，外出归来时及时清洁手和口鼻。","info":"易发","name":"过敏"},"carwash":{"detail":"适宜洗车，未来持续两天无雨天气较好，适合擦洗汽车，蓝天白云、风和日丽将伴您的车子连日洁净。","info":"适宜","name":"洗车"},"chill":{"detail":"温度未达到风寒所需的低温，稍作防寒准备即可。","info":"无","name":"风寒"},"clothes":{"detail":"建议着长袖T恤、衬衫加单裤等服装。年老体弱者宜着针织长袖衬衫、马甲和长裤。","info":"舒适","name":"穿衣"},"cold":{"detail":"天气转凉，空气湿度较大，较易发生感冒，体质较弱的朋友请注意适当防护。","info":"较易发","name":"感冒"},"comfort":{"detail":"白天温度适宜，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。","info":"舒适","name":"舒适度"},"diffusion":{"detail":"气象条件对空气污染物稀释、扩散和清除无明显影响。","info":"中","name":"空气污染扩散条件"},"dry":{"detail":"天气较好，路面比较干燥，路况较好。","info":"干燥","name":"路况"},"drying":{"detail":"天气不错，适宜晾晒。赶紧把久未见阳光的衣物搬出来吸收一下太阳的味道吧！","info":"适宜","name":"晾晒"},"fish":{"detail":"较适合垂钓，但风力稍大，会对垂钓产生一定的影响。","info":"较适宜","name":"钓鱼"},"heatstroke":{"detail":"天气不热，在炎炎夏日中十分难得，可以告别暑气漫漫啦~","info":"无中暑风险","name":"中暑"},"makeup":{"detail":"建议用蜜质SPF20面霜打底，水质无油粉底霜。","info":"去油防晒","name":"化妆"},"mood":{"detail":"天气较好，温度适宜，心情会不错，学习、工作效率较高。","info":"较好","name":"心情"},"morning":{"detail":"早晨气象条件较适宜晨练，但风力稍大，晨练时请注意选择避风的地点，避免迎风锻炼。","info":"较适宜","name":"晨练"},"sports":{"detail":"天气较好，赶快投身大自然参与户外运动，尽情感受运动的快乐吧。","info":"适宜","name":"运动"},"sunglasses":{"detail":"白天虽有白云遮挡，但太阳辐射仍很强，建议佩戴透射比2级且标注UV400的遮阳镜","info":"很必要","name":"太阳镜"},"sunscreen":{"detail":"紫外辐射极强，应特别加强防护，建议涂擦SPF20以上，PA++的防晒护肤品，并随时补涂。","info":"极强","name":"防晒"},"time":"20200926","tourism":{"detail":"天气较好，但丝毫不会影响您出行的心情。温度适宜又有微风相伴，适宜旅游。","info":"适宜","name":"旅游"},"traffic":{"detail":"天气较好，路面干燥，交通气象条件良好，车辆可以正常行驶。","info":"良好","name":"交通"},"ultraviolet":{"detail":"紫外线辐射极强，建议涂擦SPF20以上、PA++的防晒护肤品，尽量避免暴露于日光下。","info":"很强","name":"紫外线强度"},"umbrella":{"detail":"天气较好，不会降水，因此您可放心出门，无须带雨伞。","info":"不带伞","name":"雨伞"}}
-         * observe : {"degree":"23","humidity":"66","precipitation":"0.0","pressure":"1015","update_time":"202009261940","weather":"多云","weather_code":"01","weather_short":"多云","wind_direction":"8","wind_power":"0"}
-         * rise : {"0":{"sunrise":"05:44","sunset":"17:45","time":"20200926"},"1":{"sunrise":"05:45","sunset":"17:44","time":"20200927"},"10":{"sunrise":"05:51","sunset":"17:33","time":"20201006"},"11":{"sunrise":"05:51","sunset":"17:31","time":"20201007"},"12":{"sunrise":"05:52","sunset":"17:30","time":"20201008"},"13":{"sunrise":"05:53","sunset":"17:29","time":"20201009"},"14":{"sunrise":"05:53","sunset":"17:28","time":"20201010"},"15":{"sunrise":"","sunset":"","time":"20200925"},"2":{"sunrise":"05:46","sunset":"17:43","time":"20200928"},"3":{"sunrise":"05:46","sunset":"17:41","time":"20200929"},"4":{"sunrise":"05:47","sunset":"17:40","time":"20200930"},"5":{"sunrise":"05:47","sunset":"17:39","time":"20201001"},"6":{"sunrise":"05:48","sunset":"17:38","time":"20201002"},"7":{"sunrise":"05:49","sunset":"17:36","time":"20201003"},"8":{"sunrise":"05:49","sunset":"17:35","time":"20201004"},"9":{"sunrise":"05:50","sunset":"17:34","time":"20201005"}}
-         * tips : {"observe":{"0":"光芒透过云缝，洒向大地~","1":"现在的温度比较舒适~"}}
+         * forecast_24h : {"0":{"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"19","min_degree":"15","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-14"},"1":{"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"16","min_degree":"14","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-15"},"2":{"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西北风","day_wind_direction_code":"7","day_wind_power":"3","day_wind_power_code":"0","max_degree":"15","min_degree":"14","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-16"},"3":{"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"东北风","day_wind_direction_code":"1","day_wind_power":"3","day_wind_power_code":"0","max_degree":"16","min_degree":"13","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"南风","night_wind_direction_code":"4","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-17"},"4":{"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西南风","day_wind_direction_code":"5","day_wind_power":"3","day_wind_power_code":"0","max_degree":"17","min_degree":"12","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-18"},"5":{"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"东风","day_wind_direction_code":"2","day_wind_power":"3","day_wind_power_code":"0","max_degree":"17","min_degree":"14","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"东北风","night_wind_direction_code":"1","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-19"},"6":{"day_weather":"阴","day_weather_code":"02","day_weather_short":"阴","day_wind_direction":"南风","day_wind_direction_code":"4","day_wind_power":"3","day_wind_power_code":"0","max_degree":"18","min_degree":"14","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"南风","night_wind_direction_code":"4","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-20"},"7":{"day_weather":"多云","day_weather_code":"01","day_weather_short":"多云","day_wind_direction":"东北风","day_wind_direction_code":"1","day_wind_power":"3","day_wind_power_code":"0","max_degree":"19","min_degree":"15","night_weather":"晴","night_weather_code":"00","night_weather_short":"晴","night_wind_direction":"东北风","night_wind_direction_code":"1","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-21"}}
+         * index : {"airconditioner":{"detail":"您将感到很舒适，一般不需要开启空调。","info":"较少开启","name":"空调开启"},"allergy":{"detail":"天气条件易诱发过敏，有降水，最好穿长衣长裤，预防感冒可能引发的过敏。","info":"易发","name":"过敏"},"carwash":{"detail":"不宜洗车，未来24小时内有雨，如果在此期间洗车，雨水和路上的泥水可能会再次弄脏您的爱车。","info":"不宜","name":"洗车"},"chill":{"detail":"温度未达到风寒所需的低温，稍作防寒准备即可。","info":"无","name":"风寒"},"clothes":{"detail":"建议着厚外套加毛衣等服装。年老体弱者宜着大衣、呢外套加羊毛衫。","info":"较冷","name":"穿衣"},"cold":{"detail":"易发生感冒，体质较弱的朋友请注意适当防护。","info":"易发","name":"感冒"},"comfort":{"detail":"白天会有降雨，人们会感到有些凉意，但大部分人完全可以接受。","info":"较舒适","name":"舒适度"},"diffusion":{"detail":"气象条件有利于空气污染物稀释、扩散和清除。","info":"良","name":"空气污染扩散条件"},"dry":{"detail":"有降水，路面潮湿，车辆易打滑，请小心驾驶。","info":"潮湿","name":"路况"},"drying":{"detail":"有降水，不适宜晾晒。若需要晾晒，请在室内准备出充足的空间。","info":"不宜","name":"晾晒"},"fish":{"detail":"天气不好，有风，不适合垂钓。","info":"不宜","name":"钓鱼"},"heatstroke":{"detail":"天气舒适，令人神清气爽的一天，不用担心中暑的困扰。","info":"无中暑风险","name":"中暑"},"makeup":{"detail":"风力不大，建议用中性保湿型霜类化妆品，无需选用防晒化妆品。","info":"保湿","name":"化妆"},"mood":{"detail":"有降水，雨水可能会使心绪无端地挂上轻愁，与其因下雨而无精打采，不如放松心情，好好欣赏一下雨景。你会发现雨中的世界是那般洁净温和、清新葱郁。","info":"较差","name":"心情"},"morning":{"detail":"有较强降水，风力稍大，请避免户外晨练，建议在室内做适当锻炼，保持身体健康。","info":"不宜","name":"晨练"},"sports":{"detail":"有降水，推荐您在室内进行各种健身休闲运动，若坚持户外运动，须注意保暖并携带雨具。","info":"较不宜","name":"运动"},"sunglasses":{"detail":"白天有降水天气，视线较差，不需要佩戴太阳镜","info":"不需要","name":"太阳镜"},"sunscreen":{"detail":"属弱紫外辐射天气，长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","info":"弱","name":"防晒"},"time":"20201015","tourism":{"detail":"温度适宜，又有较弱降水和微风作伴，会给您的旅行带来意想不到的景象，适宜旅游，可不要错过机会呦！","info":"适宜","name":"旅游"},"traffic":{"detail":"有降水，路面湿滑，刹车距离延长，事故易发期，注意车距，务必小心驾驶。","info":"一般","name":"交通"},"ultraviolet":{"detail":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","info":"最弱","name":"紫外线强度"},"umbrella":{"detail":"有降水，请带上雨伞，如果你喜欢雨中漫步，享受大自然给予的温馨和快乐，在短时间外出可收起雨伞。","info":"带伞","name":"雨伞"}}
+         * observe : {"degree":"17","humidity":"88","precipitation":"0.3","pressure":"991.0","update_time":"202010151330","weather":"雨","weather_code":"301","weather_short":"雨","wind_direction":"3","wind_power":"1"}
+         * rise : {"0":{"sunrise":"06:55","sunset":"18:23","time":"20201015"},"1":{"sunrise":"06:56","sunset":"18:22","time":"20201016"},"10":{"sunrise":"07:02","sunset":"18:13","time":"20201025"},"11":{"sunrise":"07:02","sunset":"18:12","time":"20201026"},"12":{"sunrise":"07:03","sunset":"18:11","time":"20201027"},"13":{"sunrise":"07:04","sunset":"18:10","time":"20201028"},"14":{"sunrise":"07:05","sunset":"18:09","time":"20201029"},"15":{"sunrise":"","sunset":"","time":"20201014"},"2":{"sunrise":"06:56","sunset":"18:21","time":"20201017"},"3":{"sunrise":"06:57","sunset":"18:20","time":"20201018"},"4":{"sunrise":"06:58","sunset":"18:19","time":"20201019"},"5":{"sunrise":"06:58","sunset":"18:18","time":"20201020"},"6":{"sunrise":"06:59","sunset":"18:17","time":"20201021"},"7":{"sunrise":"07:00","sunset":"18:16","time":"20201022"},"8":{"sunrise":"07:00","sunset":"18:15","time":"20201023"},"9":{"sunrise":"07:01","sunset":"18:14","time":"20201024"}}
+         * tips : {"observe":{"0":"下雨了，出门记得带伞~","1":"现在的温度比较凉爽~"}}
          */
 
         private AirBean air;
@@ -148,47 +121,15 @@ public class TencentWeatherBean {
 
         public static class Forecast24hBean {
             /**
-             * 0 : {"day_weather":"多云","day_weather_code":"01","day_weather_short":"多云","day_wind_direction":"东北风","day_wind_direction_code":"1","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"20","night_weather":"阴","night_weather_code":"02","night_weather_short":"阴","night_wind_direction":"南风","night_wind_direction_code":"4","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-25"}
-             * 1 : {"day_weather":"阴","day_weather_code":"02","day_weather_short":"阴","day_wind_direction":"东风","day_wind_direction_code":"2","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"20","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-26"}
-             * 2 : {"day_weather":"阴","day_weather_code":"02","day_weather_short":"阴","day_wind_direction":"南风","day_wind_direction_code":"4","day_wind_power":"3","day_wind_power_code":"0","max_degree":"25","min_degree":"20","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-27"}
-             * 3 : {"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"27","min_degree":"20","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-28"}
-             * 4 : {"day_weather":"多云","day_weather_code":"01","day_weather_short":"多云","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"20","night_weather":"晴","night_weather_code":"00","night_weather_short":"晴","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-29"}
-             * 5 : {"day_weather":"晴","day_weather_code":"00","day_weather_short":"晴","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"19","night_weather":"晴","night_weather_code":"00","night_weather_short":"晴","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-09-30"}
-             * 6 : {"day_weather":"晴","day_weather_code":"00","day_weather_short":"晴","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"19","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-01"}
-             * 7 : {"day_weather":"多云","day_weather_code":"01","day_weather_short":"多云","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"26","min_degree":"19","night_weather":"阴","night_weather_code":"02","night_weather_short":"阴","night_wind_direction":"西风","night_wind_direction_code":"6","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-02"}
+             * 0 : {"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"19","min_degree":"15","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-14"}
+             * 1 : {"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西风","day_wind_direction_code":"6","day_wind_power":"3","day_wind_power_code":"0","max_degree":"16","min_degree":"14","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-15"}
+             * 2 : {"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西北风","day_wind_direction_code":"7","day_wind_power":"3","day_wind_power_code":"0","max_degree":"15","min_degree":"14","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-16"}
+             * 3 : {"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"东北风","day_wind_direction_code":"1","day_wind_power":"3","day_wind_power_code":"0","max_degree":"16","min_degree":"13","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"南风","night_wind_direction_code":"4","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-17"}
+             * 4 : {"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"西南风","day_wind_direction_code":"5","day_wind_power":"3","day_wind_power_code":"0","max_degree":"17","min_degree":"12","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"西南风","night_wind_direction_code":"5","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-18"}
+             * 5 : {"day_weather":"小雨","day_weather_code":"07","day_weather_short":"小雨","day_wind_direction":"东风","day_wind_direction_code":"2","day_wind_power":"3","day_wind_power_code":"0","max_degree":"17","min_degree":"14","night_weather":"小雨","night_weather_code":"07","night_weather_short":"小雨","night_wind_direction":"东北风","night_wind_direction_code":"1","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-19"}
+             * 6 : {"day_weather":"阴","day_weather_code":"02","day_weather_short":"阴","day_wind_direction":"南风","day_wind_direction_code":"4","day_wind_power":"3","day_wind_power_code":"0","max_degree":"18","min_degree":"14","night_weather":"多云","night_weather_code":"01","night_weather_short":"多云","night_wind_direction":"南风","night_wind_direction_code":"4","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-20"}
+             * 7 : {"day_weather":"多云","day_weather_code":"01","day_weather_short":"多云","day_wind_direction":"东北风","day_wind_direction_code":"1","day_wind_power":"3","day_wind_power_code":"0","max_degree":"19","min_degree":"15","night_weather":"晴","night_weather_code":"00","night_weather_short":"晴","night_wind_direction":"东北风","night_wind_direction_code":"1","night_wind_power":"3","night_wind_power_code":"0","time":"2020-10-21"}
              */
-            public dayBean getDataById(int id){
-                dayBean data=null;
-                switch (id){
-                    case 0:
-                        data=get_$0();
-                        break;
-                    case 1:
-                        data=get_$1();
-                        break;
-                    case 2:
-                        data=get_$2();
-                        break;
-                    case 3:
-                        data=get_$3();
-                        break;
-                    case 4:
-                        data=get_$4();
-                        break;
-                    case 5:
-                        data=get_$5();
-                        break;
-                    case 6:
-                        data=get_$6();
-                        break;
-                    case 7:
-                        data=get_$7();
-                        break;
-                    default:
-                        break;
-                }
-                return data;
-            }
 
             @SerializedName("0")
             private _$0Bean _$0;
@@ -271,691 +212,7 @@ public class TencentWeatherBean {
                 this._$7 = _$7;
             }
 
-            public static class dayBean{
-                private String day_weather;
-                private String day_weather_code;
-                private String day_weather_short;
-                private String day_wind_direction;
-                private String day_wind_direction_code;
-                private String day_wind_power;
-                private String day_wind_power_code;
-                private String max_degree;
-                private String min_degree;
-                private String night_weather;
-                private String night_weather_code;
-                private String night_weather_short;
-                private String night_wind_direction;
-                private String night_wind_direction_code;
-                private String night_wind_power;
-                private String night_wind_power_code;
-                private String time;
-
-                public String getDay_weather() {
-                    return day_weather;
-                }
-
-                public void setDay_weather(String day_weather) {
-                    this.day_weather = day_weather;
-                }
-
-                public String getDay_weather_code() {
-                    return day_weather_code;
-                }
-
-                public void setDay_weather_code(String day_weather_code) {
-                    this.day_weather_code = day_weather_code;
-                }
-
-                public String getDay_weather_short() {
-                    return day_weather_short;
-                }
-
-                public void setDay_weather_short(String day_weather_short) {
-                    this.day_weather_short = day_weather_short;
-                }
-
-                public String getDay_wind_direction() {
-                    return day_wind_direction;
-                }
-
-                public void setDay_wind_direction(String day_wind_direction) {
-                    this.day_wind_direction = day_wind_direction;
-                }
-
-                public String getDay_wind_direction_code() {
-                    return day_wind_direction_code;
-                }
-
-                public void setDay_wind_direction_code(String day_wind_direction_code) {
-                    this.day_wind_direction_code = day_wind_direction_code;
-                }
-
-                public String getDay_wind_power() {
-                    return day_wind_power;
-                }
-
-                public void setDay_wind_power(String day_wind_power) {
-                    this.day_wind_power = day_wind_power;
-                }
-
-                public String getDay_wind_power_code() {
-                    return day_wind_power_code;
-                }
-
-                public void setDay_wind_power_code(String day_wind_power_code) {
-                    this.day_wind_power_code = day_wind_power_code;
-                }
-
-                public String getMax_degree() {
-                    return max_degree;
-                }
-
-                public void setMax_degree(String max_degree) {
-                    this.max_degree = max_degree;
-                }
-
-                public String getMin_degree() {
-                    return min_degree;
-                }
-
-                public void setMin_degree(String min_degree) {
-                    this.min_degree = min_degree;
-                }
-
-                public String getNight_weather() {
-                    return night_weather;
-                }
-
-                public void setNight_weather(String night_weather) {
-                    this.night_weather = night_weather;
-                }
-
-                public String getNight_weather_code() {
-                    return night_weather_code;
-                }
-
-                public void setNight_weather_code(String night_weather_code) {
-                    this.night_weather_code = night_weather_code;
-                }
-
-                public String getNight_weather_short() {
-                    return night_weather_short;
-                }
-
-                public void setNight_weather_short(String night_weather_short) {
-                    this.night_weather_short = night_weather_short;
-                }
-
-                public String getNight_wind_direction() {
-                    return night_wind_direction;
-                }
-
-                public void setNight_wind_direction(String night_wind_direction) {
-                    this.night_wind_direction = night_wind_direction;
-                }
-
-                public String getNight_wind_direction_code() {
-                    return night_wind_direction_code;
-                }
-
-                public void setNight_wind_direction_code(String night_wind_direction_code) {
-                    this.night_wind_direction_code = night_wind_direction_code;
-                }
-
-                public String getNight_wind_power() {
-                    return night_wind_power;
-                }
-
-                public void setNight_wind_power(String night_wind_power) {
-                    this.night_wind_power = night_wind_power;
-                }
-
-                public String getNight_wind_power_code() {
-                    return night_wind_power_code;
-                }
-
-                public void setNight_wind_power_code(String night_wind_power_code) {
-                    this.night_wind_power_code = night_wind_power_code;
-                }
-
-                public String getTime() {
-                    return time;
-                }
-
-                public void setTime(String time) {
-                    this.time = time;
-                }
-            }
-
-            public static class _$0Bean extends dayBean{
-                /**
-                 * day_weather : 多云
-                 * day_weather_code : 01
-                 * day_weather_short : 多云
-                 * day_wind_direction : 东北风
-                 * day_wind_direction_code : 1
-                 * day_wind_power : 3
-                 * day_wind_power_code : 0
-                 * max_degree : 26
-                 * min_degree : 20
-                 * night_weather : 阴
-                 * night_weather_code : 02
-                 * night_weather_short : 阴
-                 * night_wind_direction : 南风
-                 * night_wind_direction_code : 4
-                 * night_wind_power : 3
-                 * night_wind_power_code : 0
-                 * time : 2020-09-25
-                 */
-
-                private String day_weather;
-                private String day_weather_code;
-                private String day_weather_short;
-                private String day_wind_direction;
-                private String day_wind_direction_code;
-                private String day_wind_power;
-                private String day_wind_power_code;
-                private String max_degree;
-                private String min_degree;
-                private String night_weather;
-                private String night_weather_code;
-                private String night_weather_short;
-                private String night_wind_direction;
-                private String night_wind_direction_code;
-                private String night_wind_power;
-                private String night_wind_power_code;
-                private String time;
-
-                public String getDay_weather() {
-                    return day_weather;
-                }
-
-                public void setDay_weather(String day_weather) {
-                    this.day_weather = day_weather;
-                }
-
-                public String getDay_weather_code() {
-                    return day_weather_code;
-                }
-
-                public void setDay_weather_code(String day_weather_code) {
-                    this.day_weather_code = day_weather_code;
-                }
-
-                public String getDay_weather_short() {
-                    return day_weather_short;
-                }
-
-                public void setDay_weather_short(String day_weather_short) {
-                    this.day_weather_short = day_weather_short;
-                }
-
-                public String getDay_wind_direction() {
-                    return day_wind_direction;
-                }
-
-                public void setDay_wind_direction(String day_wind_direction) {
-                    this.day_wind_direction = day_wind_direction;
-                }
-
-                public String getDay_wind_direction_code() {
-                    return day_wind_direction_code;
-                }
-
-                public void setDay_wind_direction_code(String day_wind_direction_code) {
-                    this.day_wind_direction_code = day_wind_direction_code;
-                }
-
-                public String getDay_wind_power() {
-                    return day_wind_power;
-                }
-
-                public void setDay_wind_power(String day_wind_power) {
-                    this.day_wind_power = day_wind_power;
-                }
-
-                public String getDay_wind_power_code() {
-                    return day_wind_power_code;
-                }
-
-                public void setDay_wind_power_code(String day_wind_power_code) {
-                    this.day_wind_power_code = day_wind_power_code;
-                }
-
-                public String getMax_degree() {
-                    return max_degree;
-                }
-
-                public void setMax_degree(String max_degree) {
-                    this.max_degree = max_degree;
-                }
-
-                public String getMin_degree() {
-                    return min_degree;
-                }
-
-                public void setMin_degree(String min_degree) {
-                    this.min_degree = min_degree;
-                }
-
-                public String getNight_weather() {
-                    return night_weather;
-                }
-
-                public void setNight_weather(String night_weather) {
-                    this.night_weather = night_weather;
-                }
-
-                public String getNight_weather_code() {
-                    return night_weather_code;
-                }
-
-                public void setNight_weather_code(String night_weather_code) {
-                    this.night_weather_code = night_weather_code;
-                }
-
-                public String getNight_weather_short() {
-                    return night_weather_short;
-                }
-
-                public void setNight_weather_short(String night_weather_short) {
-                    this.night_weather_short = night_weather_short;
-                }
-
-                public String getNight_wind_direction() {
-                    return night_wind_direction;
-                }
-
-                public void setNight_wind_direction(String night_wind_direction) {
-                    this.night_wind_direction = night_wind_direction;
-                }
-
-                public String getNight_wind_direction_code() {
-                    return night_wind_direction_code;
-                }
-
-                public void setNight_wind_direction_code(String night_wind_direction_code) {
-                    this.night_wind_direction_code = night_wind_direction_code;
-                }
-
-                public String getNight_wind_power() {
-                    return night_wind_power;
-                }
-
-                public void setNight_wind_power(String night_wind_power) {
-                    this.night_wind_power = night_wind_power;
-                }
-
-                public String getNight_wind_power_code() {
-                    return night_wind_power_code;
-                }
-
-                public void setNight_wind_power_code(String night_wind_power_code) {
-                    this.night_wind_power_code = night_wind_power_code;
-                }
-
-                public String getTime() {
-                    return time;
-                }
-
-                public void setTime(String time) {
-                    this.time = time;
-                }
-            }
-
-            public static class _$1Bean extends dayBean{
-                /**
-                 * day_weather : 阴
-                 * day_weather_code : 02
-                 * day_weather_short : 阴
-                 * day_wind_direction : 东风
-                 * day_wind_direction_code : 2
-                 * day_wind_power : 3
-                 * day_wind_power_code : 0
-                 * max_degree : 26
-                 * min_degree : 20
-                 * night_weather : 多云
-                 * night_weather_code : 01
-                 * night_weather_short : 多云
-                 * night_wind_direction : 西南风
-                 * night_wind_direction_code : 5
-                 * night_wind_power : 3
-                 * night_wind_power_code : 0
-                 * time : 2020-09-26
-                 */
-
-                private String day_weather;
-                private String day_weather_code;
-                private String day_weather_short;
-                private String day_wind_direction;
-                private String day_wind_direction_code;
-                private String day_wind_power;
-                private String day_wind_power_code;
-                private String max_degree;
-                private String min_degree;
-                private String night_weather;
-                private String night_weather_code;
-                private String night_weather_short;
-                private String night_wind_direction;
-                private String night_wind_direction_code;
-                private String night_wind_power;
-                private String night_wind_power_code;
-                private String time;
-
-                public String getDay_weather() {
-                    return day_weather;
-                }
-
-                public void setDay_weather(String day_weather) {
-                    this.day_weather = day_weather;
-                }
-
-                public String getDay_weather_code() {
-                    return day_weather_code;
-                }
-
-                public void setDay_weather_code(String day_weather_code) {
-                    this.day_weather_code = day_weather_code;
-                }
-
-                public String getDay_weather_short() {
-                    return day_weather_short;
-                }
-
-                public void setDay_weather_short(String day_weather_short) {
-                    this.day_weather_short = day_weather_short;
-                }
-
-                public String getDay_wind_direction() {
-                    return day_wind_direction;
-                }
-
-                public void setDay_wind_direction(String day_wind_direction) {
-                    this.day_wind_direction = day_wind_direction;
-                }
-
-                public String getDay_wind_direction_code() {
-                    return day_wind_direction_code;
-                }
-
-                public void setDay_wind_direction_code(String day_wind_direction_code) {
-                    this.day_wind_direction_code = day_wind_direction_code;
-                }
-
-                public String getDay_wind_power() {
-                    return day_wind_power;
-                }
-
-                public void setDay_wind_power(String day_wind_power) {
-                    this.day_wind_power = day_wind_power;
-                }
-
-                public String getDay_wind_power_code() {
-                    return day_wind_power_code;
-                }
-
-                public void setDay_wind_power_code(String day_wind_power_code) {
-                    this.day_wind_power_code = day_wind_power_code;
-                }
-
-                public String getMax_degree() {
-                    return max_degree;
-                }
-
-                public void setMax_degree(String max_degree) {
-                    this.max_degree = max_degree;
-                }
-
-                public String getMin_degree() {
-                    return min_degree;
-                }
-
-                public void setMin_degree(String min_degree) {
-                    this.min_degree = min_degree;
-                }
-
-                public String getNight_weather() {
-                    return night_weather;
-                }
-
-                public void setNight_weather(String night_weather) {
-                    this.night_weather = night_weather;
-                }
-
-                public String getNight_weather_code() {
-                    return night_weather_code;
-                }
-
-                public void setNight_weather_code(String night_weather_code) {
-                    this.night_weather_code = night_weather_code;
-                }
-
-                public String getNight_weather_short() {
-                    return night_weather_short;
-                }
-
-                public void setNight_weather_short(String night_weather_short) {
-                    this.night_weather_short = night_weather_short;
-                }
-
-                public String getNight_wind_direction() {
-                    return night_wind_direction;
-                }
-
-                public void setNight_wind_direction(String night_wind_direction) {
-                    this.night_wind_direction = night_wind_direction;
-                }
-
-                public String getNight_wind_direction_code() {
-                    return night_wind_direction_code;
-                }
-
-                public void setNight_wind_direction_code(String night_wind_direction_code) {
-                    this.night_wind_direction_code = night_wind_direction_code;
-                }
-
-                public String getNight_wind_power() {
-                    return night_wind_power;
-                }
-
-                public void setNight_wind_power(String night_wind_power) {
-                    this.night_wind_power = night_wind_power;
-                }
-
-                public String getNight_wind_power_code() {
-                    return night_wind_power_code;
-                }
-
-                public void setNight_wind_power_code(String night_wind_power_code) {
-                    this.night_wind_power_code = night_wind_power_code;
-                }
-
-                public String getTime() {
-                    return time;
-                }
-
-                public void setTime(String time) {
-                    this.time = time;
-                }
-            }
-
-            public static class _$2Bean extends dayBean{
-                /**
-                 * day_weather : 阴
-                 * day_weather_code : 02
-                 * day_weather_short : 阴
-                 * day_wind_direction : 南风
-                 * day_wind_direction_code : 4
-                 * day_wind_power : 3
-                 * day_wind_power_code : 0
-                 * max_degree : 25
-                 * min_degree : 20
-                 * night_weather : 多云
-                 * night_weather_code : 01
-                 * night_weather_short : 多云
-                 * night_wind_direction : 西风
-                 * night_wind_direction_code : 6
-                 * night_wind_power : 3
-                 * night_wind_power_code : 0
-                 * time : 2020-09-27
-                 */
-
-                private String day_weather;
-                private String day_weather_code;
-                private String day_weather_short;
-                private String day_wind_direction;
-                private String day_wind_direction_code;
-                private String day_wind_power;
-                private String day_wind_power_code;
-                private String max_degree;
-                private String min_degree;
-                private String night_weather;
-                private String night_weather_code;
-                private String night_weather_short;
-                private String night_wind_direction;
-                private String night_wind_direction_code;
-                private String night_wind_power;
-                private String night_wind_power_code;
-                private String time;
-
-                public String getDay_weather() {
-                    return day_weather;
-                }
-
-                public void setDay_weather(String day_weather) {
-                    this.day_weather = day_weather;
-                }
-
-                public String getDay_weather_code() {
-                    return day_weather_code;
-                }
-
-                public void setDay_weather_code(String day_weather_code) {
-                    this.day_weather_code = day_weather_code;
-                }
-
-                public String getDay_weather_short() {
-                    return day_weather_short;
-                }
-
-                public void setDay_weather_short(String day_weather_short) {
-                    this.day_weather_short = day_weather_short;
-                }
-
-                public String getDay_wind_direction() {
-                    return day_wind_direction;
-                }
-
-                public void setDay_wind_direction(String day_wind_direction) {
-                    this.day_wind_direction = day_wind_direction;
-                }
-
-                public String getDay_wind_direction_code() {
-                    return day_wind_direction_code;
-                }
-
-                public void setDay_wind_direction_code(String day_wind_direction_code) {
-                    this.day_wind_direction_code = day_wind_direction_code;
-                }
-
-                public String getDay_wind_power() {
-                    return day_wind_power;
-                }
-
-                public void setDay_wind_power(String day_wind_power) {
-                    this.day_wind_power = day_wind_power;
-                }
-
-                public String getDay_wind_power_code() {
-                    return day_wind_power_code;
-                }
-
-                public void setDay_wind_power_code(String day_wind_power_code) {
-                    this.day_wind_power_code = day_wind_power_code;
-                }
-
-                public String getMax_degree() {
-                    return max_degree;
-                }
-
-                public void setMax_degree(String max_degree) {
-                    this.max_degree = max_degree;
-                }
-
-                public String getMin_degree() {
-                    return min_degree;
-                }
-
-                public void setMin_degree(String min_degree) {
-                    this.min_degree = min_degree;
-                }
-
-                public String getNight_weather() {
-                    return night_weather;
-                }
-
-                public void setNight_weather(String night_weather) {
-                    this.night_weather = night_weather;
-                }
-
-                public String getNight_weather_code() {
-                    return night_weather_code;
-                }
-
-                public void setNight_weather_code(String night_weather_code) {
-                    this.night_weather_code = night_weather_code;
-                }
-
-                public String getNight_weather_short() {
-                    return night_weather_short;
-                }
-
-                public void setNight_weather_short(String night_weather_short) {
-                    this.night_weather_short = night_weather_short;
-                }
-
-                public String getNight_wind_direction() {
-                    return night_wind_direction;
-                }
-
-                public void setNight_wind_direction(String night_wind_direction) {
-                    this.night_wind_direction = night_wind_direction;
-                }
-
-                public String getNight_wind_direction_code() {
-                    return night_wind_direction_code;
-                }
-
-                public void setNight_wind_direction_code(String night_wind_direction_code) {
-                    this.night_wind_direction_code = night_wind_direction_code;
-                }
-
-                public String getNight_wind_power() {
-                    return night_wind_power;
-                }
-
-                public void setNight_wind_power(String night_wind_power) {
-                    this.night_wind_power = night_wind_power;
-                }
-
-                public String getNight_wind_power_code() {
-                    return night_wind_power_code;
-                }
-
-                public void setNight_wind_power_code(String night_wind_power_code) {
-                    this.night_wind_power_code = night_wind_power_code;
-                }
-
-                public String getTime() {
-                    return time;
-                }
-
-                public void setTime(String time) {
-                    this.time = time;
-                }
-            }
-
-            public static class _$3Bean extends dayBean{
+            public static class _$0Bean {
                 /**
                  * day_weather : 小雨
                  * day_weather_code : 07
@@ -964,16 +221,16 @@ public class TencentWeatherBean {
                  * day_wind_direction_code : 6
                  * day_wind_power : 3
                  * day_wind_power_code : 0
-                 * max_degree : 27
-                 * min_degree : 20
-                 * night_weather : 多云
-                 * night_weather_code : 01
-                 * night_weather_short : 多云
-                 * night_wind_direction : 西风
-                 * night_wind_direction_code : 6
+                 * max_degree : 19
+                 * min_degree : 15
+                 * night_weather : 小雨
+                 * night_weather_code : 07
+                 * night_weather_short : 小雨
+                 * night_wind_direction : 西南风
+                 * night_wind_direction_code : 5
                  * night_wind_power : 3
                  * night_wind_power_code : 0
-                 * time : 2020-09-28
+                 * time : 2020-10-14
                  */
 
                 private String day_weather;
@@ -1131,553 +388,1081 @@ public class TencentWeatherBean {
                 }
             }
 
-            public static class _$4Bean extends dayBean{
+            public static class _$1Bean {
+                /**
+                 * day_weather : 小雨
+                 * day_weather_code : 07
+                 * day_weather_short : 小雨
+                 * day_wind_direction : 西风
+                 * day_wind_direction_code : 6
+                 * day_wind_power : 3
+                 * day_wind_power_code : 0
+                 * max_degree : 16
+                 * min_degree : 14
+                 * night_weather : 小雨
+                 * night_weather_code : 07
+                 * night_weather_short : 小雨
+                 * night_wind_direction : 西南风
+                 * night_wind_direction_code : 5
+                 * night_wind_power : 3
+                 * night_wind_power_code : 0
+                 * time : 2020-10-15
+                 */
+
+                private String day_weather;
+                private String day_weather_code;
+                private String day_weather_short;
+                private String day_wind_direction;
+                private String day_wind_direction_code;
+                private String day_wind_power;
+                private String day_wind_power_code;
+                private String max_degree;
+                private String min_degree;
+                private String night_weather;
+                private String night_weather_code;
+                private String night_weather_short;
+                private String night_wind_direction;
+                private String night_wind_direction_code;
+                private String night_wind_power;
+                private String night_wind_power_code;
+                private String time;
+
+                public String getDay_weather() {
+                    return day_weather;
+                }
+
+                public void setDay_weather(String day_weather) {
+                    this.day_weather = day_weather;
+                }
+
+                public String getDay_weather_code() {
+                    return day_weather_code;
+                }
+
+                public void setDay_weather_code(String day_weather_code) {
+                    this.day_weather_code = day_weather_code;
+                }
+
+                public String getDay_weather_short() {
+                    return day_weather_short;
+                }
+
+                public void setDay_weather_short(String day_weather_short) {
+                    this.day_weather_short = day_weather_short;
+                }
+
+                public String getDay_wind_direction() {
+                    return day_wind_direction;
+                }
+
+                public void setDay_wind_direction(String day_wind_direction) {
+                    this.day_wind_direction = day_wind_direction;
+                }
+
+                public String getDay_wind_direction_code() {
+                    return day_wind_direction_code;
+                }
+
+                public void setDay_wind_direction_code(String day_wind_direction_code) {
+                    this.day_wind_direction_code = day_wind_direction_code;
+                }
+
+                public String getDay_wind_power() {
+                    return day_wind_power;
+                }
+
+                public void setDay_wind_power(String day_wind_power) {
+                    this.day_wind_power = day_wind_power;
+                }
+
+                public String getDay_wind_power_code() {
+                    return day_wind_power_code;
+                }
+
+                public void setDay_wind_power_code(String day_wind_power_code) {
+                    this.day_wind_power_code = day_wind_power_code;
+                }
+
+                public String getMax_degree() {
+                    return max_degree;
+                }
+
+                public void setMax_degree(String max_degree) {
+                    this.max_degree = max_degree;
+                }
+
+                public String getMin_degree() {
+                    return min_degree;
+                }
+
+                public void setMin_degree(String min_degree) {
+                    this.min_degree = min_degree;
+                }
+
+                public String getNight_weather() {
+                    return night_weather;
+                }
+
+                public void setNight_weather(String night_weather) {
+                    this.night_weather = night_weather;
+                }
+
+                public String getNight_weather_code() {
+                    return night_weather_code;
+                }
+
+                public void setNight_weather_code(String night_weather_code) {
+                    this.night_weather_code = night_weather_code;
+                }
+
+                public String getNight_weather_short() {
+                    return night_weather_short;
+                }
+
+                public void setNight_weather_short(String night_weather_short) {
+                    this.night_weather_short = night_weather_short;
+                }
+
+                public String getNight_wind_direction() {
+                    return night_wind_direction;
+                }
+
+                public void setNight_wind_direction(String night_wind_direction) {
+                    this.night_wind_direction = night_wind_direction;
+                }
+
+                public String getNight_wind_direction_code() {
+                    return night_wind_direction_code;
+                }
+
+                public void setNight_wind_direction_code(String night_wind_direction_code) {
+                    this.night_wind_direction_code = night_wind_direction_code;
+                }
+
+                public String getNight_wind_power() {
+                    return night_wind_power;
+                }
+
+                public void setNight_wind_power(String night_wind_power) {
+                    this.night_wind_power = night_wind_power;
+                }
+
+                public String getNight_wind_power_code() {
+                    return night_wind_power_code;
+                }
+
+                public void setNight_wind_power_code(String night_wind_power_code) {
+                    this.night_wind_power_code = night_wind_power_code;
+                }
+
+                public String getTime() {
+                    return time;
+                }
+
+                public void setTime(String time) {
+                    this.time = time;
+                }
+            }
+
+            public static class _$2Bean {
+                /**
+                 * day_weather : 小雨
+                 * day_weather_code : 07
+                 * day_weather_short : 小雨
+                 * day_wind_direction : 西北风
+                 * day_wind_direction_code : 7
+                 * day_wind_power : 3
+                 * day_wind_power_code : 0
+                 * max_degree : 15
+                 * min_degree : 14
+                 * night_weather : 小雨
+                 * night_weather_code : 07
+                 * night_weather_short : 小雨
+                 * night_wind_direction : 西南风
+                 * night_wind_direction_code : 5
+                 * night_wind_power : 3
+                 * night_wind_power_code : 0
+                 * time : 2020-10-16
+                 */
+
+                private String day_weather;
+                private String day_weather_code;
+                private String day_weather_short;
+                private String day_wind_direction;
+                private String day_wind_direction_code;
+                private String day_wind_power;
+                private String day_wind_power_code;
+                private String max_degree;
+                private String min_degree;
+                private String night_weather;
+                private String night_weather_code;
+                private String night_weather_short;
+                private String night_wind_direction;
+                private String night_wind_direction_code;
+                private String night_wind_power;
+                private String night_wind_power_code;
+                private String time;
+
+                public String getDay_weather() {
+                    return day_weather;
+                }
+
+                public void setDay_weather(String day_weather) {
+                    this.day_weather = day_weather;
+                }
+
+                public String getDay_weather_code() {
+                    return day_weather_code;
+                }
+
+                public void setDay_weather_code(String day_weather_code) {
+                    this.day_weather_code = day_weather_code;
+                }
+
+                public String getDay_weather_short() {
+                    return day_weather_short;
+                }
+
+                public void setDay_weather_short(String day_weather_short) {
+                    this.day_weather_short = day_weather_short;
+                }
+
+                public String getDay_wind_direction() {
+                    return day_wind_direction;
+                }
+
+                public void setDay_wind_direction(String day_wind_direction) {
+                    this.day_wind_direction = day_wind_direction;
+                }
+
+                public String getDay_wind_direction_code() {
+                    return day_wind_direction_code;
+                }
+
+                public void setDay_wind_direction_code(String day_wind_direction_code) {
+                    this.day_wind_direction_code = day_wind_direction_code;
+                }
+
+                public String getDay_wind_power() {
+                    return day_wind_power;
+                }
+
+                public void setDay_wind_power(String day_wind_power) {
+                    this.day_wind_power = day_wind_power;
+                }
+
+                public String getDay_wind_power_code() {
+                    return day_wind_power_code;
+                }
+
+                public void setDay_wind_power_code(String day_wind_power_code) {
+                    this.day_wind_power_code = day_wind_power_code;
+                }
+
+                public String getMax_degree() {
+                    return max_degree;
+                }
+
+                public void setMax_degree(String max_degree) {
+                    this.max_degree = max_degree;
+                }
+
+                public String getMin_degree() {
+                    return min_degree;
+                }
+
+                public void setMin_degree(String min_degree) {
+                    this.min_degree = min_degree;
+                }
+
+                public String getNight_weather() {
+                    return night_weather;
+                }
+
+                public void setNight_weather(String night_weather) {
+                    this.night_weather = night_weather;
+                }
+
+                public String getNight_weather_code() {
+                    return night_weather_code;
+                }
+
+                public void setNight_weather_code(String night_weather_code) {
+                    this.night_weather_code = night_weather_code;
+                }
+
+                public String getNight_weather_short() {
+                    return night_weather_short;
+                }
+
+                public void setNight_weather_short(String night_weather_short) {
+                    this.night_weather_short = night_weather_short;
+                }
+
+                public String getNight_wind_direction() {
+                    return night_wind_direction;
+                }
+
+                public void setNight_wind_direction(String night_wind_direction) {
+                    this.night_wind_direction = night_wind_direction;
+                }
+
+                public String getNight_wind_direction_code() {
+                    return night_wind_direction_code;
+                }
+
+                public void setNight_wind_direction_code(String night_wind_direction_code) {
+                    this.night_wind_direction_code = night_wind_direction_code;
+                }
+
+                public String getNight_wind_power() {
+                    return night_wind_power;
+                }
+
+                public void setNight_wind_power(String night_wind_power) {
+                    this.night_wind_power = night_wind_power;
+                }
+
+                public String getNight_wind_power_code() {
+                    return night_wind_power_code;
+                }
+
+                public void setNight_wind_power_code(String night_wind_power_code) {
+                    this.night_wind_power_code = night_wind_power_code;
+                }
+
+                public String getTime() {
+                    return time;
+                }
+
+                public void setTime(String time) {
+                    this.time = time;
+                }
+            }
+
+            public static class _$3Bean {
+                /**
+                 * day_weather : 小雨
+                 * day_weather_code : 07
+                 * day_weather_short : 小雨
+                 * day_wind_direction : 东北风
+                 * day_wind_direction_code : 1
+                 * day_wind_power : 3
+                 * day_wind_power_code : 0
+                 * max_degree : 16
+                 * min_degree : 13
+                 * night_weather : 小雨
+                 * night_weather_code : 07
+                 * night_weather_short : 小雨
+                 * night_wind_direction : 南风
+                 * night_wind_direction_code : 4
+                 * night_wind_power : 3
+                 * night_wind_power_code : 0
+                 * time : 2020-10-17
+                 */
+
+                private String day_weather;
+                private String day_weather_code;
+                private String day_weather_short;
+                private String day_wind_direction;
+                private String day_wind_direction_code;
+                private String day_wind_power;
+                private String day_wind_power_code;
+                private String max_degree;
+                private String min_degree;
+                private String night_weather;
+                private String night_weather_code;
+                private String night_weather_short;
+                private String night_wind_direction;
+                private String night_wind_direction_code;
+                private String night_wind_power;
+                private String night_wind_power_code;
+                private String time;
+
+                public String getDay_weather() {
+                    return day_weather;
+                }
+
+                public void setDay_weather(String day_weather) {
+                    this.day_weather = day_weather;
+                }
+
+                public String getDay_weather_code() {
+                    return day_weather_code;
+                }
+
+                public void setDay_weather_code(String day_weather_code) {
+                    this.day_weather_code = day_weather_code;
+                }
+
+                public String getDay_weather_short() {
+                    return day_weather_short;
+                }
+
+                public void setDay_weather_short(String day_weather_short) {
+                    this.day_weather_short = day_weather_short;
+                }
+
+                public String getDay_wind_direction() {
+                    return day_wind_direction;
+                }
+
+                public void setDay_wind_direction(String day_wind_direction) {
+                    this.day_wind_direction = day_wind_direction;
+                }
+
+                public String getDay_wind_direction_code() {
+                    return day_wind_direction_code;
+                }
+
+                public void setDay_wind_direction_code(String day_wind_direction_code) {
+                    this.day_wind_direction_code = day_wind_direction_code;
+                }
+
+                public String getDay_wind_power() {
+                    return day_wind_power;
+                }
+
+                public void setDay_wind_power(String day_wind_power) {
+                    this.day_wind_power = day_wind_power;
+                }
+
+                public String getDay_wind_power_code() {
+                    return day_wind_power_code;
+                }
+
+                public void setDay_wind_power_code(String day_wind_power_code) {
+                    this.day_wind_power_code = day_wind_power_code;
+                }
+
+                public String getMax_degree() {
+                    return max_degree;
+                }
+
+                public void setMax_degree(String max_degree) {
+                    this.max_degree = max_degree;
+                }
+
+                public String getMin_degree() {
+                    return min_degree;
+                }
+
+                public void setMin_degree(String min_degree) {
+                    this.min_degree = min_degree;
+                }
+
+                public String getNight_weather() {
+                    return night_weather;
+                }
+
+                public void setNight_weather(String night_weather) {
+                    this.night_weather = night_weather;
+                }
+
+                public String getNight_weather_code() {
+                    return night_weather_code;
+                }
+
+                public void setNight_weather_code(String night_weather_code) {
+                    this.night_weather_code = night_weather_code;
+                }
+
+                public String getNight_weather_short() {
+                    return night_weather_short;
+                }
+
+                public void setNight_weather_short(String night_weather_short) {
+                    this.night_weather_short = night_weather_short;
+                }
+
+                public String getNight_wind_direction() {
+                    return night_wind_direction;
+                }
+
+                public void setNight_wind_direction(String night_wind_direction) {
+                    this.night_wind_direction = night_wind_direction;
+                }
+
+                public String getNight_wind_direction_code() {
+                    return night_wind_direction_code;
+                }
+
+                public void setNight_wind_direction_code(String night_wind_direction_code) {
+                    this.night_wind_direction_code = night_wind_direction_code;
+                }
+
+                public String getNight_wind_power() {
+                    return night_wind_power;
+                }
+
+                public void setNight_wind_power(String night_wind_power) {
+                    this.night_wind_power = night_wind_power;
+                }
+
+                public String getNight_wind_power_code() {
+                    return night_wind_power_code;
+                }
+
+                public void setNight_wind_power_code(String night_wind_power_code) {
+                    this.night_wind_power_code = night_wind_power_code;
+                }
+
+                public String getTime() {
+                    return time;
+                }
+
+                public void setTime(String time) {
+                    this.time = time;
+                }
+            }
+
+            public static class _$4Bean {
+                /**
+                 * day_weather : 小雨
+                 * day_weather_code : 07
+                 * day_weather_short : 小雨
+                 * day_wind_direction : 西南风
+                 * day_wind_direction_code : 5
+                 * day_wind_power : 3
+                 * day_wind_power_code : 0
+                 * max_degree : 17
+                 * min_degree : 12
+                 * night_weather : 多云
+                 * night_weather_code : 01
+                 * night_weather_short : 多云
+                 * night_wind_direction : 西南风
+                 * night_wind_direction_code : 5
+                 * night_wind_power : 3
+                 * night_wind_power_code : 0
+                 * time : 2020-10-18
+                 */
+
+                private String day_weather;
+                private String day_weather_code;
+                private String day_weather_short;
+                private String day_wind_direction;
+                private String day_wind_direction_code;
+                private String day_wind_power;
+                private String day_wind_power_code;
+                private String max_degree;
+                private String min_degree;
+                private String night_weather;
+                private String night_weather_code;
+                private String night_weather_short;
+                private String night_wind_direction;
+                private String night_wind_direction_code;
+                private String night_wind_power;
+                private String night_wind_power_code;
+                private String time;
+
+                public String getDay_weather() {
+                    return day_weather;
+                }
+
+                public void setDay_weather(String day_weather) {
+                    this.day_weather = day_weather;
+                }
+
+                public String getDay_weather_code() {
+                    return day_weather_code;
+                }
+
+                public void setDay_weather_code(String day_weather_code) {
+                    this.day_weather_code = day_weather_code;
+                }
+
+                public String getDay_weather_short() {
+                    return day_weather_short;
+                }
+
+                public void setDay_weather_short(String day_weather_short) {
+                    this.day_weather_short = day_weather_short;
+                }
+
+                public String getDay_wind_direction() {
+                    return day_wind_direction;
+                }
+
+                public void setDay_wind_direction(String day_wind_direction) {
+                    this.day_wind_direction = day_wind_direction;
+                }
+
+                public String getDay_wind_direction_code() {
+                    return day_wind_direction_code;
+                }
+
+                public void setDay_wind_direction_code(String day_wind_direction_code) {
+                    this.day_wind_direction_code = day_wind_direction_code;
+                }
+
+                public String getDay_wind_power() {
+                    return day_wind_power;
+                }
+
+                public void setDay_wind_power(String day_wind_power) {
+                    this.day_wind_power = day_wind_power;
+                }
+
+                public String getDay_wind_power_code() {
+                    return day_wind_power_code;
+                }
+
+                public void setDay_wind_power_code(String day_wind_power_code) {
+                    this.day_wind_power_code = day_wind_power_code;
+                }
+
+                public String getMax_degree() {
+                    return max_degree;
+                }
+
+                public void setMax_degree(String max_degree) {
+                    this.max_degree = max_degree;
+                }
+
+                public String getMin_degree() {
+                    return min_degree;
+                }
+
+                public void setMin_degree(String min_degree) {
+                    this.min_degree = min_degree;
+                }
+
+                public String getNight_weather() {
+                    return night_weather;
+                }
+
+                public void setNight_weather(String night_weather) {
+                    this.night_weather = night_weather;
+                }
+
+                public String getNight_weather_code() {
+                    return night_weather_code;
+                }
+
+                public void setNight_weather_code(String night_weather_code) {
+                    this.night_weather_code = night_weather_code;
+                }
+
+                public String getNight_weather_short() {
+                    return night_weather_short;
+                }
+
+                public void setNight_weather_short(String night_weather_short) {
+                    this.night_weather_short = night_weather_short;
+                }
+
+                public String getNight_wind_direction() {
+                    return night_wind_direction;
+                }
+
+                public void setNight_wind_direction(String night_wind_direction) {
+                    this.night_wind_direction = night_wind_direction;
+                }
+
+                public String getNight_wind_direction_code() {
+                    return night_wind_direction_code;
+                }
+
+                public void setNight_wind_direction_code(String night_wind_direction_code) {
+                    this.night_wind_direction_code = night_wind_direction_code;
+                }
+
+                public String getNight_wind_power() {
+                    return night_wind_power;
+                }
+
+                public void setNight_wind_power(String night_wind_power) {
+                    this.night_wind_power = night_wind_power;
+                }
+
+                public String getNight_wind_power_code() {
+                    return night_wind_power_code;
+                }
+
+                public void setNight_wind_power_code(String night_wind_power_code) {
+                    this.night_wind_power_code = night_wind_power_code;
+                }
+
+                public String getTime() {
+                    return time;
+                }
+
+                public void setTime(String time) {
+                    this.time = time;
+                }
+            }
+
+            public static class _$5Bean {
+                /**
+                 * day_weather : 小雨
+                 * day_weather_code : 07
+                 * day_weather_short : 小雨
+                 * day_wind_direction : 东风
+                 * day_wind_direction_code : 2
+                 * day_wind_power : 3
+                 * day_wind_power_code : 0
+                 * max_degree : 17
+                 * min_degree : 14
+                 * night_weather : 小雨
+                 * night_weather_code : 07
+                 * night_weather_short : 小雨
+                 * night_wind_direction : 东北风
+                 * night_wind_direction_code : 1
+                 * night_wind_power : 3
+                 * night_wind_power_code : 0
+                 * time : 2020-10-19
+                 */
+
+                private String day_weather;
+                private String day_weather_code;
+                private String day_weather_short;
+                private String day_wind_direction;
+                private String day_wind_direction_code;
+                private String day_wind_power;
+                private String day_wind_power_code;
+                private String max_degree;
+                private String min_degree;
+                private String night_weather;
+                private String night_weather_code;
+                private String night_weather_short;
+                private String night_wind_direction;
+                private String night_wind_direction_code;
+                private String night_wind_power;
+                private String night_wind_power_code;
+                private String time;
+
+                public String getDay_weather() {
+                    return day_weather;
+                }
+
+                public void setDay_weather(String day_weather) {
+                    this.day_weather = day_weather;
+                }
+
+                public String getDay_weather_code() {
+                    return day_weather_code;
+                }
+
+                public void setDay_weather_code(String day_weather_code) {
+                    this.day_weather_code = day_weather_code;
+                }
+
+                public String getDay_weather_short() {
+                    return day_weather_short;
+                }
+
+                public void setDay_weather_short(String day_weather_short) {
+                    this.day_weather_short = day_weather_short;
+                }
+
+                public String getDay_wind_direction() {
+                    return day_wind_direction;
+                }
+
+                public void setDay_wind_direction(String day_wind_direction) {
+                    this.day_wind_direction = day_wind_direction;
+                }
+
+                public String getDay_wind_direction_code() {
+                    return day_wind_direction_code;
+                }
+
+                public void setDay_wind_direction_code(String day_wind_direction_code) {
+                    this.day_wind_direction_code = day_wind_direction_code;
+                }
+
+                public String getDay_wind_power() {
+                    return day_wind_power;
+                }
+
+                public void setDay_wind_power(String day_wind_power) {
+                    this.day_wind_power = day_wind_power;
+                }
+
+                public String getDay_wind_power_code() {
+                    return day_wind_power_code;
+                }
+
+                public void setDay_wind_power_code(String day_wind_power_code) {
+                    this.day_wind_power_code = day_wind_power_code;
+                }
+
+                public String getMax_degree() {
+                    return max_degree;
+                }
+
+                public void setMax_degree(String max_degree) {
+                    this.max_degree = max_degree;
+                }
+
+                public String getMin_degree() {
+                    return min_degree;
+                }
+
+                public void setMin_degree(String min_degree) {
+                    this.min_degree = min_degree;
+                }
+
+                public String getNight_weather() {
+                    return night_weather;
+                }
+
+                public void setNight_weather(String night_weather) {
+                    this.night_weather = night_weather;
+                }
+
+                public String getNight_weather_code() {
+                    return night_weather_code;
+                }
+
+                public void setNight_weather_code(String night_weather_code) {
+                    this.night_weather_code = night_weather_code;
+                }
+
+                public String getNight_weather_short() {
+                    return night_weather_short;
+                }
+
+                public void setNight_weather_short(String night_weather_short) {
+                    this.night_weather_short = night_weather_short;
+                }
+
+                public String getNight_wind_direction() {
+                    return night_wind_direction;
+                }
+
+                public void setNight_wind_direction(String night_wind_direction) {
+                    this.night_wind_direction = night_wind_direction;
+                }
+
+                public String getNight_wind_direction_code() {
+                    return night_wind_direction_code;
+                }
+
+                public void setNight_wind_direction_code(String night_wind_direction_code) {
+                    this.night_wind_direction_code = night_wind_direction_code;
+                }
+
+                public String getNight_wind_power() {
+                    return night_wind_power;
+                }
+
+                public void setNight_wind_power(String night_wind_power) {
+                    this.night_wind_power = night_wind_power;
+                }
+
+                public String getNight_wind_power_code() {
+                    return night_wind_power_code;
+                }
+
+                public void setNight_wind_power_code(String night_wind_power_code) {
+                    this.night_wind_power_code = night_wind_power_code;
+                }
+
+                public String getTime() {
+                    return time;
+                }
+
+                public void setTime(String time) {
+                    this.time = time;
+                }
+            }
+
+            public static class _$6Bean {
+                /**
+                 * day_weather : 阴
+                 * day_weather_code : 02
+                 * day_weather_short : 阴
+                 * day_wind_direction : 南风
+                 * day_wind_direction_code : 4
+                 * day_wind_power : 3
+                 * day_wind_power_code : 0
+                 * max_degree : 18
+                 * min_degree : 14
+                 * night_weather : 多云
+                 * night_weather_code : 01
+                 * night_weather_short : 多云
+                 * night_wind_direction : 南风
+                 * night_wind_direction_code : 4
+                 * night_wind_power : 3
+                 * night_wind_power_code : 0
+                 * time : 2020-10-20
+                 */
+
+                private String day_weather;
+                private String day_weather_code;
+                private String day_weather_short;
+                private String day_wind_direction;
+                private String day_wind_direction_code;
+                private String day_wind_power;
+                private String day_wind_power_code;
+                private String max_degree;
+                private String min_degree;
+                private String night_weather;
+                private String night_weather_code;
+                private String night_weather_short;
+                private String night_wind_direction;
+                private String night_wind_direction_code;
+                private String night_wind_power;
+                private String night_wind_power_code;
+                private String time;
+
+                public String getDay_weather() {
+                    return day_weather;
+                }
+
+                public void setDay_weather(String day_weather) {
+                    this.day_weather = day_weather;
+                }
+
+                public String getDay_weather_code() {
+                    return day_weather_code;
+                }
+
+                public void setDay_weather_code(String day_weather_code) {
+                    this.day_weather_code = day_weather_code;
+                }
+
+                public String getDay_weather_short() {
+                    return day_weather_short;
+                }
+
+                public void setDay_weather_short(String day_weather_short) {
+                    this.day_weather_short = day_weather_short;
+                }
+
+                public String getDay_wind_direction() {
+                    return day_wind_direction;
+                }
+
+                public void setDay_wind_direction(String day_wind_direction) {
+                    this.day_wind_direction = day_wind_direction;
+                }
+
+                public String getDay_wind_direction_code() {
+                    return day_wind_direction_code;
+                }
+
+                public void setDay_wind_direction_code(String day_wind_direction_code) {
+                    this.day_wind_direction_code = day_wind_direction_code;
+                }
+
+                public String getDay_wind_power() {
+                    return day_wind_power;
+                }
+
+                public void setDay_wind_power(String day_wind_power) {
+                    this.day_wind_power = day_wind_power;
+                }
+
+                public String getDay_wind_power_code() {
+                    return day_wind_power_code;
+                }
+
+                public void setDay_wind_power_code(String day_wind_power_code) {
+                    this.day_wind_power_code = day_wind_power_code;
+                }
+
+                public String getMax_degree() {
+                    return max_degree;
+                }
+
+                public void setMax_degree(String max_degree) {
+                    this.max_degree = max_degree;
+                }
+
+                public String getMin_degree() {
+                    return min_degree;
+                }
+
+                public void setMin_degree(String min_degree) {
+                    this.min_degree = min_degree;
+                }
+
+                public String getNight_weather() {
+                    return night_weather;
+                }
+
+                public void setNight_weather(String night_weather) {
+                    this.night_weather = night_weather;
+                }
+
+                public String getNight_weather_code() {
+                    return night_weather_code;
+                }
+
+                public void setNight_weather_code(String night_weather_code) {
+                    this.night_weather_code = night_weather_code;
+                }
+
+                public String getNight_weather_short() {
+                    return night_weather_short;
+                }
+
+                public void setNight_weather_short(String night_weather_short) {
+                    this.night_weather_short = night_weather_short;
+                }
+
+                public String getNight_wind_direction() {
+                    return night_wind_direction;
+                }
+
+                public void setNight_wind_direction(String night_wind_direction) {
+                    this.night_wind_direction = night_wind_direction;
+                }
+
+                public String getNight_wind_direction_code() {
+                    return night_wind_direction_code;
+                }
+
+                public void setNight_wind_direction_code(String night_wind_direction_code) {
+                    this.night_wind_direction_code = night_wind_direction_code;
+                }
+
+                public String getNight_wind_power() {
+                    return night_wind_power;
+                }
+
+                public void setNight_wind_power(String night_wind_power) {
+                    this.night_wind_power = night_wind_power;
+                }
+
+                public String getNight_wind_power_code() {
+                    return night_wind_power_code;
+                }
+
+                public void setNight_wind_power_code(String night_wind_power_code) {
+                    this.night_wind_power_code = night_wind_power_code;
+                }
+
+                public String getTime() {
+                    return time;
+                }
+
+                public void setTime(String time) {
+                    this.time = time;
+                }
+            }
+
+            public static class _$7Bean {
                 /**
                  * day_weather : 多云
                  * day_weather_code : 01
                  * day_weather_short : 多云
-                 * day_wind_direction : 西风
-                 * day_wind_direction_code : 6
+                 * day_wind_direction : 东北风
+                 * day_wind_direction_code : 1
                  * day_wind_power : 3
                  * day_wind_power_code : 0
-                 * max_degree : 26
-                 * min_degree : 20
+                 * max_degree : 19
+                 * min_degree : 15
                  * night_weather : 晴
                  * night_weather_code : 00
                  * night_weather_short : 晴
-                 * night_wind_direction : 西风
-                 * night_wind_direction_code : 6
+                 * night_wind_direction : 东北风
+                 * night_wind_direction_code : 1
                  * night_wind_power : 3
                  * night_wind_power_code : 0
-                 * time : 2020-09-29
-                 */
-
-                private String day_weather;
-                private String day_weather_code;
-                private String day_weather_short;
-                private String day_wind_direction;
-                private String day_wind_direction_code;
-                private String day_wind_power;
-                private String day_wind_power_code;
-                private String max_degree;
-                private String min_degree;
-                private String night_weather;
-                private String night_weather_code;
-                private String night_weather_short;
-                private String night_wind_direction;
-                private String night_wind_direction_code;
-                private String night_wind_power;
-                private String night_wind_power_code;
-                private String time;
-
-                public String getDay_weather() {
-                    return day_weather;
-                }
-
-                public void setDay_weather(String day_weather) {
-                    this.day_weather = day_weather;
-                }
-
-                public String getDay_weather_code() {
-                    return day_weather_code;
-                }
-
-                public void setDay_weather_code(String day_weather_code) {
-                    this.day_weather_code = day_weather_code;
-                }
-
-                public String getDay_weather_short() {
-                    return day_weather_short;
-                }
-
-                public void setDay_weather_short(String day_weather_short) {
-                    this.day_weather_short = day_weather_short;
-                }
-
-                public String getDay_wind_direction() {
-                    return day_wind_direction;
-                }
-
-                public void setDay_wind_direction(String day_wind_direction) {
-                    this.day_wind_direction = day_wind_direction;
-                }
-
-                public String getDay_wind_direction_code() {
-                    return day_wind_direction_code;
-                }
-
-                public void setDay_wind_direction_code(String day_wind_direction_code) {
-                    this.day_wind_direction_code = day_wind_direction_code;
-                }
-
-                public String getDay_wind_power() {
-                    return day_wind_power;
-                }
-
-                public void setDay_wind_power(String day_wind_power) {
-                    this.day_wind_power = day_wind_power;
-                }
-
-                public String getDay_wind_power_code() {
-                    return day_wind_power_code;
-                }
-
-                public void setDay_wind_power_code(String day_wind_power_code) {
-                    this.day_wind_power_code = day_wind_power_code;
-                }
-
-                public String getMax_degree() {
-                    return max_degree;
-                }
-
-                public void setMax_degree(String max_degree) {
-                    this.max_degree = max_degree;
-                }
-
-                public String getMin_degree() {
-                    return min_degree;
-                }
-
-                public void setMin_degree(String min_degree) {
-                    this.min_degree = min_degree;
-                }
-
-                public String getNight_weather() {
-                    return night_weather;
-                }
-
-                public void setNight_weather(String night_weather) {
-                    this.night_weather = night_weather;
-                }
-
-                public String getNight_weather_code() {
-                    return night_weather_code;
-                }
-
-                public void setNight_weather_code(String night_weather_code) {
-                    this.night_weather_code = night_weather_code;
-                }
-
-                public String getNight_weather_short() {
-                    return night_weather_short;
-                }
-
-                public void setNight_weather_short(String night_weather_short) {
-                    this.night_weather_short = night_weather_short;
-                }
-
-                public String getNight_wind_direction() {
-                    return night_wind_direction;
-                }
-
-                public void setNight_wind_direction(String night_wind_direction) {
-                    this.night_wind_direction = night_wind_direction;
-                }
-
-                public String getNight_wind_direction_code() {
-                    return night_wind_direction_code;
-                }
-
-                public void setNight_wind_direction_code(String night_wind_direction_code) {
-                    this.night_wind_direction_code = night_wind_direction_code;
-                }
-
-                public String getNight_wind_power() {
-                    return night_wind_power;
-                }
-
-                public void setNight_wind_power(String night_wind_power) {
-                    this.night_wind_power = night_wind_power;
-                }
-
-                public String getNight_wind_power_code() {
-                    return night_wind_power_code;
-                }
-
-                public void setNight_wind_power_code(String night_wind_power_code) {
-                    this.night_wind_power_code = night_wind_power_code;
-                }
-
-                public String getTime() {
-                    return time;
-                }
-
-                public void setTime(String time) {
-                    this.time = time;
-                }
-            }
-
-            public static class _$5Bean extends dayBean{
-                /**
-                 * day_weather : 晴
-                 * day_weather_code : 00
-                 * day_weather_short : 晴
-                 * day_wind_direction : 西风
-                 * day_wind_direction_code : 6
-                 * day_wind_power : 3
-                 * day_wind_power_code : 0
-                 * max_degree : 26
-                 * min_degree : 19
-                 * night_weather : 晴
-                 * night_weather_code : 00
-                 * night_weather_short : 晴
-                 * night_wind_direction : 西风
-                 * night_wind_direction_code : 6
-                 * night_wind_power : 3
-                 * night_wind_power_code : 0
-                 * time : 2020-09-30
-                 */
-
-                private String day_weather;
-                private String day_weather_code;
-                private String day_weather_short;
-                private String day_wind_direction;
-                private String day_wind_direction_code;
-                private String day_wind_power;
-                private String day_wind_power_code;
-                private String max_degree;
-                private String min_degree;
-                private String night_weather;
-                private String night_weather_code;
-                private String night_weather_short;
-                private String night_wind_direction;
-                private String night_wind_direction_code;
-                private String night_wind_power;
-                private String night_wind_power_code;
-                private String time;
-
-                public String getDay_weather() {
-                    return day_weather;
-                }
-
-                public void setDay_weather(String day_weather) {
-                    this.day_weather = day_weather;
-                }
-
-                public String getDay_weather_code() {
-                    return day_weather_code;
-                }
-
-                public void setDay_weather_code(String day_weather_code) {
-                    this.day_weather_code = day_weather_code;
-                }
-
-                public String getDay_weather_short() {
-                    return day_weather_short;
-                }
-
-                public void setDay_weather_short(String day_weather_short) {
-                    this.day_weather_short = day_weather_short;
-                }
-
-                public String getDay_wind_direction() {
-                    return day_wind_direction;
-                }
-
-                public void setDay_wind_direction(String day_wind_direction) {
-                    this.day_wind_direction = day_wind_direction;
-                }
-
-                public String getDay_wind_direction_code() {
-                    return day_wind_direction_code;
-                }
-
-                public void setDay_wind_direction_code(String day_wind_direction_code) {
-                    this.day_wind_direction_code = day_wind_direction_code;
-                }
-
-                public String getDay_wind_power() {
-                    return day_wind_power;
-                }
-
-                public void setDay_wind_power(String day_wind_power) {
-                    this.day_wind_power = day_wind_power;
-                }
-
-                public String getDay_wind_power_code() {
-                    return day_wind_power_code;
-                }
-
-                public void setDay_wind_power_code(String day_wind_power_code) {
-                    this.day_wind_power_code = day_wind_power_code;
-                }
-
-                public String getMax_degree() {
-                    return max_degree;
-                }
-
-                public void setMax_degree(String max_degree) {
-                    this.max_degree = max_degree;
-                }
-
-                public String getMin_degree() {
-                    return min_degree;
-                }
-
-                public void setMin_degree(String min_degree) {
-                    this.min_degree = min_degree;
-                }
-
-                public String getNight_weather() {
-                    return night_weather;
-                }
-
-                public void setNight_weather(String night_weather) {
-                    this.night_weather = night_weather;
-                }
-
-                public String getNight_weather_code() {
-                    return night_weather_code;
-                }
-
-                public void setNight_weather_code(String night_weather_code) {
-                    this.night_weather_code = night_weather_code;
-                }
-
-                public String getNight_weather_short() {
-                    return night_weather_short;
-                }
-
-                public void setNight_weather_short(String night_weather_short) {
-                    this.night_weather_short = night_weather_short;
-                }
-
-                public String getNight_wind_direction() {
-                    return night_wind_direction;
-                }
-
-                public void setNight_wind_direction(String night_wind_direction) {
-                    this.night_wind_direction = night_wind_direction;
-                }
-
-                public String getNight_wind_direction_code() {
-                    return night_wind_direction_code;
-                }
-
-                public void setNight_wind_direction_code(String night_wind_direction_code) {
-                    this.night_wind_direction_code = night_wind_direction_code;
-                }
-
-                public String getNight_wind_power() {
-                    return night_wind_power;
-                }
-
-                public void setNight_wind_power(String night_wind_power) {
-                    this.night_wind_power = night_wind_power;
-                }
-
-                public String getNight_wind_power_code() {
-                    return night_wind_power_code;
-                }
-
-                public void setNight_wind_power_code(String night_wind_power_code) {
-                    this.night_wind_power_code = night_wind_power_code;
-                }
-
-                public String getTime() {
-                    return time;
-                }
-
-                public void setTime(String time) {
-                    this.time = time;
-                }
-            }
-
-            public static class _$6Bean extends dayBean{
-                /**
-                 * day_weather : 晴
-                 * day_weather_code : 00
-                 * day_weather_short : 晴
-                 * day_wind_direction : 西风
-                 * day_wind_direction_code : 6
-                 * day_wind_power : 3
-                 * day_wind_power_code : 0
-                 * max_degree : 26
-                 * min_degree : 19
-                 * night_weather : 多云
-                 * night_weather_code : 01
-                 * night_weather_short : 多云
-                 * night_wind_direction : 西风
-                 * night_wind_direction_code : 6
-                 * night_wind_power : 3
-                 * night_wind_power_code : 0
-                 * time : 2020-10-01
-                 */
-
-                private String day_weather;
-                private String day_weather_code;
-                private String day_weather_short;
-                private String day_wind_direction;
-                private String day_wind_direction_code;
-                private String day_wind_power;
-                private String day_wind_power_code;
-                private String max_degree;
-                private String min_degree;
-                private String night_weather;
-                private String night_weather_code;
-                private String night_weather_short;
-                private String night_wind_direction;
-                private String night_wind_direction_code;
-                private String night_wind_power;
-                private String night_wind_power_code;
-                private String time;
-
-                public String getDay_weather() {
-                    return day_weather;
-                }
-
-                public void setDay_weather(String day_weather) {
-                    this.day_weather = day_weather;
-                }
-
-                public String getDay_weather_code() {
-                    return day_weather_code;
-                }
-
-                public void setDay_weather_code(String day_weather_code) {
-                    this.day_weather_code = day_weather_code;
-                }
-
-                public String getDay_weather_short() {
-                    return day_weather_short;
-                }
-
-                public void setDay_weather_short(String day_weather_short) {
-                    this.day_weather_short = day_weather_short;
-                }
-
-                public String getDay_wind_direction() {
-                    return day_wind_direction;
-                }
-
-                public void setDay_wind_direction(String day_wind_direction) {
-                    this.day_wind_direction = day_wind_direction;
-                }
-
-                public String getDay_wind_direction_code() {
-                    return day_wind_direction_code;
-                }
-
-                public void setDay_wind_direction_code(String day_wind_direction_code) {
-                    this.day_wind_direction_code = day_wind_direction_code;
-                }
-
-                public String getDay_wind_power() {
-                    return day_wind_power;
-                }
-
-                public void setDay_wind_power(String day_wind_power) {
-                    this.day_wind_power = day_wind_power;
-                }
-
-                public String getDay_wind_power_code() {
-                    return day_wind_power_code;
-                }
-
-                public void setDay_wind_power_code(String day_wind_power_code) {
-                    this.day_wind_power_code = day_wind_power_code;
-                }
-
-                public String getMax_degree() {
-                    return max_degree;
-                }
-
-                public void setMax_degree(String max_degree) {
-                    this.max_degree = max_degree;
-                }
-
-                public String getMin_degree() {
-                    return min_degree;
-                }
-
-                public void setMin_degree(String min_degree) {
-                    this.min_degree = min_degree;
-                }
-
-                public String getNight_weather() {
-                    return night_weather;
-                }
-
-                public void setNight_weather(String night_weather) {
-                    this.night_weather = night_weather;
-                }
-
-                public String getNight_weather_code() {
-                    return night_weather_code;
-                }
-
-                public void setNight_weather_code(String night_weather_code) {
-                    this.night_weather_code = night_weather_code;
-                }
-
-                public String getNight_weather_short() {
-                    return night_weather_short;
-                }
-
-                public void setNight_weather_short(String night_weather_short) {
-                    this.night_weather_short = night_weather_short;
-                }
-
-                public String getNight_wind_direction() {
-                    return night_wind_direction;
-                }
-
-                public void setNight_wind_direction(String night_wind_direction) {
-                    this.night_wind_direction = night_wind_direction;
-                }
-
-                public String getNight_wind_direction_code() {
-                    return night_wind_direction_code;
-                }
-
-                public void setNight_wind_direction_code(String night_wind_direction_code) {
-                    this.night_wind_direction_code = night_wind_direction_code;
-                }
-
-                public String getNight_wind_power() {
-                    return night_wind_power;
-                }
-
-                public void setNight_wind_power(String night_wind_power) {
-                    this.night_wind_power = night_wind_power;
-                }
-
-                public String getNight_wind_power_code() {
-                    return night_wind_power_code;
-                }
-
-                public void setNight_wind_power_code(String night_wind_power_code) {
-                    this.night_wind_power_code = night_wind_power_code;
-                }
-
-                public String getTime() {
-                    return time;
-                }
-
-                public void setTime(String time) {
-                    this.time = time;
-                }
-            }
-
-            public static class _$7Bean extends dayBean{
-                /**
-                 * day_weather : 多云
-                 * day_weather_code : 01
-                 * day_weather_short : 多云
-                 * day_wind_direction : 西风
-                 * day_wind_direction_code : 6
-                 * day_wind_power : 3
-                 * day_wind_power_code : 0
-                 * max_degree : 26
-                 * min_degree : 19
-                 * night_weather : 阴
-                 * night_weather_code : 02
-                 * night_weather_short : 阴
-                 * night_wind_direction : 西风
-                 * night_wind_direction_code : 6
-                 * night_wind_power : 3
-                 * night_wind_power_code : 0
-                 * time : 2020-10-02
+                 * time : 2020-10-21
                  */
 
                 private String day_weather;
@@ -1839,28 +1624,28 @@ public class TencentWeatherBean {
         public static class IndexBean {
             /**
              * airconditioner : {"detail":"您将感到很舒适，一般不需要开启空调。","info":"较少开启","name":"空调开启"}
-             * allergy : {"detail":"天气条件易诱发过敏，宜穿长衣长裤并佩戴好眼镜和口罩，外出归来时及时清洁手和口鼻。","info":"易发","name":"过敏"}
-             * carwash : {"detail":"适宜洗车，未来持续两天无雨天气较好，适合擦洗汽车，蓝天白云、风和日丽将伴您的车子连日洁净。","info":"适宜","name":"洗车"}
+             * allergy : {"detail":"天气条件易诱发过敏，有降水，最好穿长衣长裤，预防感冒可能引发的过敏。","info":"易发","name":"过敏"}
+             * carwash : {"detail":"不宜洗车，未来24小时内有雨，如果在此期间洗车，雨水和路上的泥水可能会再次弄脏您的爱车。","info":"不宜","name":"洗车"}
              * chill : {"detail":"温度未达到风寒所需的低温，稍作防寒准备即可。","info":"无","name":"风寒"}
-             * clothes : {"detail":"建议着长袖T恤、衬衫加单裤等服装。年老体弱者宜着针织长袖衬衫、马甲和长裤。","info":"舒适","name":"穿衣"}
-             * cold : {"detail":"天气转凉，空气湿度较大，较易发生感冒，体质较弱的朋友请注意适当防护。","info":"较易发","name":"感冒"}
-             * comfort : {"detail":"白天温度适宜，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。","info":"舒适","name":"舒适度"}
-             * diffusion : {"detail":"气象条件对空气污染物稀释、扩散和清除无明显影响。","info":"中","name":"空气污染扩散条件"}
-             * dry : {"detail":"天气较好，路面比较干燥，路况较好。","info":"干燥","name":"路况"}
-             * drying : {"detail":"天气不错，适宜晾晒。赶紧把久未见阳光的衣物搬出来吸收一下太阳的味道吧！","info":"适宜","name":"晾晒"}
-             * fish : {"detail":"较适合垂钓，但风力稍大，会对垂钓产生一定的影响。","info":"较适宜","name":"钓鱼"}
-             * heatstroke : {"detail":"天气不热，在炎炎夏日中十分难得，可以告别暑气漫漫啦~","info":"无中暑风险","name":"中暑"}
-             * makeup : {"detail":"建议用蜜质SPF20面霜打底，水质无油粉底霜。","info":"去油防晒","name":"化妆"}
-             * mood : {"detail":"天气较好，温度适宜，心情会不错，学习、工作效率较高。","info":"较好","name":"心情"}
-             * morning : {"detail":"早晨气象条件较适宜晨练，但风力稍大，晨练时请注意选择避风的地点，避免迎风锻炼。","info":"较适宜","name":"晨练"}
-             * sports : {"detail":"天气较好，赶快投身大自然参与户外运动，尽情感受运动的快乐吧。","info":"适宜","name":"运动"}
-             * sunglasses : {"detail":"白天虽有白云遮挡，但太阳辐射仍很强，建议佩戴透射比2级且标注UV400的遮阳镜","info":"很必要","name":"太阳镜"}
-             * sunscreen : {"detail":"紫外辐射极强，应特别加强防护，建议涂擦SPF20以上，PA++的防晒护肤品，并随时补涂。","info":"极强","name":"防晒"}
-             * time : 20200926
-             * tourism : {"detail":"天气较好，但丝毫不会影响您出行的心情。温度适宜又有微风相伴，适宜旅游。","info":"适宜","name":"旅游"}
-             * traffic : {"detail":"天气较好，路面干燥，交通气象条件良好，车辆可以正常行驶。","info":"良好","name":"交通"}
-             * ultraviolet : {"detail":"紫外线辐射极强，建议涂擦SPF20以上、PA++的防晒护肤品，尽量避免暴露于日光下。","info":"很强","name":"紫外线强度"}
-             * umbrella : {"detail":"天气较好，不会降水，因此您可放心出门，无须带雨伞。","info":"不带伞","name":"雨伞"}
+             * clothes : {"detail":"建议着厚外套加毛衣等服装。年老体弱者宜着大衣、呢外套加羊毛衫。","info":"较冷","name":"穿衣"}
+             * cold : {"detail":"易发生感冒，体质较弱的朋友请注意适当防护。","info":"易发","name":"感冒"}
+             * comfort : {"detail":"白天会有降雨，人们会感到有些凉意，但大部分人完全可以接受。","info":"较舒适","name":"舒适度"}
+             * diffusion : {"detail":"气象条件有利于空气污染物稀释、扩散和清除。","info":"良","name":"空气污染扩散条件"}
+             * dry : {"detail":"有降水，路面潮湿，车辆易打滑，请小心驾驶。","info":"潮湿","name":"路况"}
+             * drying : {"detail":"有降水，不适宜晾晒。若需要晾晒，请在室内准备出充足的空间。","info":"不宜","name":"晾晒"}
+             * fish : {"detail":"天气不好，有风，不适合垂钓。","info":"不宜","name":"钓鱼"}
+             * heatstroke : {"detail":"天气舒适，令人神清气爽的一天，不用担心中暑的困扰。","info":"无中暑风险","name":"中暑"}
+             * makeup : {"detail":"风力不大，建议用中性保湿型霜类化妆品，无需选用防晒化妆品。","info":"保湿","name":"化妆"}
+             * mood : {"detail":"有降水，雨水可能会使心绪无端地挂上轻愁，与其因下雨而无精打采，不如放松心情，好好欣赏一下雨景。你会发现雨中的世界是那般洁净温和、清新葱郁。","info":"较差","name":"心情"}
+             * morning : {"detail":"有较强降水，风力稍大，请避免户外晨练，建议在室内做适当锻炼，保持身体健康。","info":"不宜","name":"晨练"}
+             * sports : {"detail":"有降水，推荐您在室内进行各种健身休闲运动，若坚持户外运动，须注意保暖并携带雨具。","info":"较不宜","name":"运动"}
+             * sunglasses : {"detail":"白天有降水天气，视线较差，不需要佩戴太阳镜","info":"不需要","name":"太阳镜"}
+             * sunscreen : {"detail":"属弱紫外辐射天气，长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","info":"弱","name":"防晒"}
+             * time : 20201015
+             * tourism : {"detail":"温度适宜，又有较弱降水和微风作伴，会给您的旅行带来意想不到的景象，适宜旅游，可不要错过机会呦！","info":"适宜","name":"旅游"}
+             * traffic : {"detail":"有降水，路面湿滑，刹车距离延长，事故易发期，注意车距，务必小心驾驶。","info":"一般","name":"交通"}
+             * ultraviolet : {"detail":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。","info":"最弱","name":"紫外线强度"}
+             * umbrella : {"detail":"有降水，请带上雨伞，如果你喜欢雨中漫步，享受大自然给予的温馨和快乐，在短时间外出可收起雨伞。","info":"带伞","name":"雨伞"}
              */
 
             private AirconditionerBean airconditioner;
@@ -2109,7 +1894,7 @@ public class TencentWeatherBean {
 
             public static class AllergyBean {
                 /**
-                 * detail : 天气条件易诱发过敏，宜穿长衣长裤并佩戴好眼镜和口罩，外出归来时及时清洁手和口鼻。
+                 * detail : 天气条件易诱发过敏，有降水，最好穿长衣长裤，预防感冒可能引发的过敏。
                  * info : 易发
                  * name : 过敏
                  */
@@ -2145,8 +1930,8 @@ public class TencentWeatherBean {
 
             public static class CarwashBean {
                 /**
-                 * detail : 适宜洗车，未来持续两天无雨天气较好，适合擦洗汽车，蓝天白云、风和日丽将伴您的车子连日洁净。
-                 * info : 适宜
+                 * detail : 不宜洗车，未来24小时内有雨，如果在此期间洗车，雨水和路上的泥水可能会再次弄脏您的爱车。
+                 * info : 不宜
                  * name : 洗车
                  */
 
@@ -2217,8 +2002,8 @@ public class TencentWeatherBean {
 
             public static class ClothesBean {
                 /**
-                 * detail : 建议着长袖T恤、衬衫加单裤等服装。年老体弱者宜着针织长袖衬衫、马甲和长裤。
-                 * info : 舒适
+                 * detail : 建议着厚外套加毛衣等服装。年老体弱者宜着大衣、呢外套加羊毛衫。
+                 * info : 较冷
                  * name : 穿衣
                  */
 
@@ -2253,8 +2038,8 @@ public class TencentWeatherBean {
 
             public static class ColdBean {
                 /**
-                 * detail : 天气转凉，空气湿度较大，较易发生感冒，体质较弱的朋友请注意适当防护。
-                 * info : 较易发
+                 * detail : 易发生感冒，体质较弱的朋友请注意适当防护。
+                 * info : 易发
                  * name : 感冒
                  */
 
@@ -2289,8 +2074,8 @@ public class TencentWeatherBean {
 
             public static class ComfortBean {
                 /**
-                 * detail : 白天温度适宜，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。
-                 * info : 舒适
+                 * detail : 白天会有降雨，人们会感到有些凉意，但大部分人完全可以接受。
+                 * info : 较舒适
                  * name : 舒适度
                  */
 
@@ -2325,8 +2110,8 @@ public class TencentWeatherBean {
 
             public static class DiffusionBean {
                 /**
-                 * detail : 气象条件对空气污染物稀释、扩散和清除无明显影响。
-                 * info : 中
+                 * detail : 气象条件有利于空气污染物稀释、扩散和清除。
+                 * info : 良
                  * name : 空气污染扩散条件
                  */
 
@@ -2361,8 +2146,8 @@ public class TencentWeatherBean {
 
             public static class DryBean {
                 /**
-                 * detail : 天气较好，路面比较干燥，路况较好。
-                 * info : 干燥
+                 * detail : 有降水，路面潮湿，车辆易打滑，请小心驾驶。
+                 * info : 潮湿
                  * name : 路况
                  */
 
@@ -2397,8 +2182,8 @@ public class TencentWeatherBean {
 
             public static class DryingBean {
                 /**
-                 * detail : 天气不错，适宜晾晒。赶紧把久未见阳光的衣物搬出来吸收一下太阳的味道吧！
-                 * info : 适宜
+                 * detail : 有降水，不适宜晾晒。若需要晾晒，请在室内准备出充足的空间。
+                 * info : 不宜
                  * name : 晾晒
                  */
 
@@ -2433,8 +2218,8 @@ public class TencentWeatherBean {
 
             public static class FishBean {
                 /**
-                 * detail : 较适合垂钓，但风力稍大，会对垂钓产生一定的影响。
-                 * info : 较适宜
+                 * detail : 天气不好，有风，不适合垂钓。
+                 * info : 不宜
                  * name : 钓鱼
                  */
 
@@ -2469,7 +2254,7 @@ public class TencentWeatherBean {
 
             public static class HeatstrokeBean {
                 /**
-                 * detail : 天气不热，在炎炎夏日中十分难得，可以告别暑气漫漫啦~
+                 * detail : 天气舒适，令人神清气爽的一天，不用担心中暑的困扰。
                  * info : 无中暑风险
                  * name : 中暑
                  */
@@ -2505,8 +2290,8 @@ public class TencentWeatherBean {
 
             public static class MakeupBean {
                 /**
-                 * detail : 建议用蜜质SPF20面霜打底，水质无油粉底霜。
-                 * info : 去油防晒
+                 * detail : 风力不大，建议用中性保湿型霜类化妆品，无需选用防晒化妆品。
+                 * info : 保湿
                  * name : 化妆
                  */
 
@@ -2541,8 +2326,8 @@ public class TencentWeatherBean {
 
             public static class MoodBean {
                 /**
-                 * detail : 天气较好，温度适宜，心情会不错，学习、工作效率较高。
-                 * info : 较好
+                 * detail : 有降水，雨水可能会使心绪无端地挂上轻愁，与其因下雨而无精打采，不如放松心情，好好欣赏一下雨景。你会发现雨中的世界是那般洁净温和、清新葱郁。
+                 * info : 较差
                  * name : 心情
                  */
 
@@ -2577,8 +2362,8 @@ public class TencentWeatherBean {
 
             public static class MorningBean {
                 /**
-                 * detail : 早晨气象条件较适宜晨练，但风力稍大，晨练时请注意选择避风的地点，避免迎风锻炼。
-                 * info : 较适宜
+                 * detail : 有较强降水，风力稍大，请避免户外晨练，建议在室内做适当锻炼，保持身体健康。
+                 * info : 不宜
                  * name : 晨练
                  */
 
@@ -2613,8 +2398,8 @@ public class TencentWeatherBean {
 
             public static class SportsBean {
                 /**
-                 * detail : 天气较好，赶快投身大自然参与户外运动，尽情感受运动的快乐吧。
-                 * info : 适宜
+                 * detail : 有降水，推荐您在室内进行各种健身休闲运动，若坚持户外运动，须注意保暖并携带雨具。
+                 * info : 较不宜
                  * name : 运动
                  */
 
@@ -2649,8 +2434,8 @@ public class TencentWeatherBean {
 
             public static class SunglassesBean {
                 /**
-                 * detail : 白天虽有白云遮挡，但太阳辐射仍很强，建议佩戴透射比2级且标注UV400的遮阳镜
-                 * info : 很必要
+                 * detail : 白天有降水天气，视线较差，不需要佩戴太阳镜
+                 * info : 不需要
                  * name : 太阳镜
                  */
 
@@ -2685,8 +2470,8 @@ public class TencentWeatherBean {
 
             public static class SunscreenBean {
                 /**
-                 * detail : 紫外辐射极强，应特别加强防护，建议涂擦SPF20以上，PA++的防晒护肤品，并随时补涂。
-                 * info : 极强
+                 * detail : 属弱紫外辐射天气，长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。
+                 * info : 弱
                  * name : 防晒
                  */
 
@@ -2721,7 +2506,7 @@ public class TencentWeatherBean {
 
             public static class TourismBean {
                 /**
-                 * detail : 天气较好，但丝毫不会影响您出行的心情。温度适宜又有微风相伴，适宜旅游。
+                 * detail : 温度适宜，又有较弱降水和微风作伴，会给您的旅行带来意想不到的景象，适宜旅游，可不要错过机会呦！
                  * info : 适宜
                  * name : 旅游
                  */
@@ -2757,8 +2542,8 @@ public class TencentWeatherBean {
 
             public static class TrafficBean {
                 /**
-                 * detail : 天气较好，路面干燥，交通气象条件良好，车辆可以正常行驶。
-                 * info : 良好
+                 * detail : 有降水，路面湿滑，刹车距离延长，事故易发期，注意车距，务必小心驾驶。
+                 * info : 一般
                  * name : 交通
                  */
 
@@ -2793,8 +2578,8 @@ public class TencentWeatherBean {
 
             public static class UltravioletBean {
                 /**
-                 * detail : 紫外线辐射极强，建议涂擦SPF20以上、PA++的防晒护肤品，尽量避免暴露于日光下。
-                 * info : 很强
+                 * detail : 属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。
+                 * info : 最弱
                  * name : 紫外线强度
                  */
 
@@ -2829,8 +2614,8 @@ public class TencentWeatherBean {
 
             public static class UmbrellaBean {
                 /**
-                 * detail : 天气较好，不会降水，因此您可放心出门，无须带雨伞。
-                 * info : 不带伞
+                 * detail : 有降水，请带上雨伞，如果你喜欢雨中漫步，享受大自然给予的温馨和快乐，在短时间外出可收起雨伞。
+                 * info : 带伞
                  * name : 雨伞
                  */
 
@@ -2866,16 +2651,16 @@ public class TencentWeatherBean {
 
         public static class ObserveBean {
             /**
-             * degree : 23
-             * humidity : 66
-             * precipitation : 0.0
-             * pressure : 1015
-             * update_time : 202009261940
-             * weather : 多云
-             * weather_code : 01
-             * weather_short : 多云
-             * wind_direction : 8
-             * wind_power : 0
+             * degree : 17
+             * humidity : 88
+             * precipitation : 0.3
+             * pressure : 991.0
+             * update_time : 202010151330
+             * weather : 雨
+             * weather_code : 301
+             * weather_short : 雨
+             * wind_direction : 3
+             * wind_power : 1
              */
 
             private String degree;
@@ -2972,22 +2757,22 @@ public class TencentWeatherBean {
 
         public static class RiseBean {
             /**
-             * 0 : {"sunrise":"05:44","sunset":"17:45","time":"20200926"}
-             * 1 : {"sunrise":"05:45","sunset":"17:44","time":"20200927"}
-             * 10 : {"sunrise":"05:51","sunset":"17:33","time":"20201006"}
-             * 11 : {"sunrise":"05:51","sunset":"17:31","time":"20201007"}
-             * 12 : {"sunrise":"05:52","sunset":"17:30","time":"20201008"}
-             * 13 : {"sunrise":"05:53","sunset":"17:29","time":"20201009"}
-             * 14 : {"sunrise":"05:53","sunset":"17:28","time":"20201010"}
-             * 15 : {"sunrise":"","sunset":"","time":"20200925"}
-             * 2 : {"sunrise":"05:46","sunset":"17:43","time":"20200928"}
-             * 3 : {"sunrise":"05:46","sunset":"17:41","time":"20200929"}
-             * 4 : {"sunrise":"05:47","sunset":"17:40","time":"20200930"}
-             * 5 : {"sunrise":"05:47","sunset":"17:39","time":"20201001"}
-             * 6 : {"sunrise":"05:48","sunset":"17:38","time":"20201002"}
-             * 7 : {"sunrise":"05:49","sunset":"17:36","time":"20201003"}
-             * 8 : {"sunrise":"05:49","sunset":"17:35","time":"20201004"}
-             * 9 : {"sunrise":"05:50","sunset":"17:34","time":"20201005"}
+             * 0 : {"sunrise":"06:55","sunset":"18:23","time":"20201015"}
+             * 1 : {"sunrise":"06:56","sunset":"18:22","time":"20201016"}
+             * 10 : {"sunrise":"07:02","sunset":"18:13","time":"20201025"}
+             * 11 : {"sunrise":"07:02","sunset":"18:12","time":"20201026"}
+             * 12 : {"sunrise":"07:03","sunset":"18:11","time":"20201027"}
+             * 13 : {"sunrise":"07:04","sunset":"18:10","time":"20201028"}
+             * 14 : {"sunrise":"07:05","sunset":"18:09","time":"20201029"}
+             * 15 : {"sunrise":"","sunset":"","time":"20201014"}
+             * 2 : {"sunrise":"06:56","sunset":"18:21","time":"20201017"}
+             * 3 : {"sunrise":"06:57","sunset":"18:20","time":"20201018"}
+             * 4 : {"sunrise":"06:58","sunset":"18:19","time":"20201019"}
+             * 5 : {"sunrise":"06:58","sunset":"18:18","time":"20201020"}
+             * 6 : {"sunrise":"06:59","sunset":"18:17","time":"20201021"}
+             * 7 : {"sunrise":"07:00","sunset":"18:16","time":"20201022"}
+             * 8 : {"sunrise":"07:00","sunset":"18:15","time":"20201023"}
+             * 9 : {"sunrise":"07:01","sunset":"18:14","time":"20201024"}
              */
 
             @SerializedName("0")
@@ -3153,9 +2938,9 @@ public class TencentWeatherBean {
 
             public static class _$0BeanX {
                 /**
-                 * sunrise : 05:44
-                 * sunset : 17:45
-                 * time : 20200926
+                 * sunrise : 06:55
+                 * sunset : 18:23
+                 * time : 20201015
                  */
 
                 private String sunrise;
@@ -3189,9 +2974,9 @@ public class TencentWeatherBean {
 
             public static class _$1BeanX {
                 /**
-                 * sunrise : 05:45
-                 * sunset : 17:44
-                 * time : 20200927
+                 * sunrise : 06:56
+                 * sunset : 18:22
+                 * time : 20201016
                  */
 
                 private String sunrise;
@@ -3225,9 +3010,9 @@ public class TencentWeatherBean {
 
             public static class _$10Bean {
                 /**
-                 * sunrise : 05:51
-                 * sunset : 17:33
-                 * time : 20201006
+                 * sunrise : 07:02
+                 * sunset : 18:13
+                 * time : 20201025
                  */
 
                 private String sunrise;
@@ -3261,9 +3046,9 @@ public class TencentWeatherBean {
 
             public static class _$11Bean {
                 /**
-                 * sunrise : 05:51
-                 * sunset : 17:31
-                 * time : 20201007
+                 * sunrise : 07:02
+                 * sunset : 18:12
+                 * time : 20201026
                  */
 
                 private String sunrise;
@@ -3297,9 +3082,9 @@ public class TencentWeatherBean {
 
             public static class _$12Bean {
                 /**
-                 * sunrise : 05:52
-                 * sunset : 17:30
-                 * time : 20201008
+                 * sunrise : 07:03
+                 * sunset : 18:11
+                 * time : 20201027
                  */
 
                 private String sunrise;
@@ -3333,9 +3118,9 @@ public class TencentWeatherBean {
 
             public static class _$13Bean {
                 /**
-                 * sunrise : 05:53
-                 * sunset : 17:29
-                 * time : 20201009
+                 * sunrise : 07:04
+                 * sunset : 18:10
+                 * time : 20201028
                  */
 
                 private String sunrise;
@@ -3369,9 +3154,9 @@ public class TencentWeatherBean {
 
             public static class _$14Bean {
                 /**
-                 * sunrise : 05:53
-                 * sunset : 17:28
-                 * time : 20201010
+                 * sunrise : 07:05
+                 * sunset : 18:09
+                 * time : 20201029
                  */
 
                 private String sunrise;
@@ -3407,7 +3192,7 @@ public class TencentWeatherBean {
                 /**
                  * sunrise :
                  * sunset :
-                 * time : 20200925
+                 * time : 20201014
                  */
 
                 private String sunrise;
@@ -3441,9 +3226,9 @@ public class TencentWeatherBean {
 
             public static class _$2BeanX {
                 /**
-                 * sunrise : 05:46
-                 * sunset : 17:43
-                 * time : 20200928
+                 * sunrise : 06:56
+                 * sunset : 18:21
+                 * time : 20201017
                  */
 
                 private String sunrise;
@@ -3477,9 +3262,9 @@ public class TencentWeatherBean {
 
             public static class _$3BeanX {
                 /**
-                 * sunrise : 05:46
-                 * sunset : 17:41
-                 * time : 20200929
+                 * sunrise : 06:57
+                 * sunset : 18:20
+                 * time : 20201018
                  */
 
                 private String sunrise;
@@ -3513,9 +3298,9 @@ public class TencentWeatherBean {
 
             public static class _$4BeanX {
                 /**
-                 * sunrise : 05:47
-                 * sunset : 17:40
-                 * time : 20200930
+                 * sunrise : 06:58
+                 * sunset : 18:19
+                 * time : 20201019
                  */
 
                 private String sunrise;
@@ -3549,9 +3334,9 @@ public class TencentWeatherBean {
 
             public static class _$5BeanX {
                 /**
-                 * sunrise : 05:47
-                 * sunset : 17:39
-                 * time : 20201001
+                 * sunrise : 06:58
+                 * sunset : 18:18
+                 * time : 20201020
                  */
 
                 private String sunrise;
@@ -3585,9 +3370,9 @@ public class TencentWeatherBean {
 
             public static class _$6BeanX {
                 /**
-                 * sunrise : 05:48
-                 * sunset : 17:38
-                 * time : 20201002
+                 * sunrise : 06:59
+                 * sunset : 18:17
+                 * time : 20201021
                  */
 
                 private String sunrise;
@@ -3621,9 +3406,9 @@ public class TencentWeatherBean {
 
             public static class _$7BeanX {
                 /**
-                 * sunrise : 05:49
-                 * sunset : 17:36
-                 * time : 20201003
+                 * sunrise : 07:00
+                 * sunset : 18:16
+                 * time : 20201022
                  */
 
                 private String sunrise;
@@ -3657,9 +3442,9 @@ public class TencentWeatherBean {
 
             public static class _$8Bean {
                 /**
-                 * sunrise : 05:49
-                 * sunset : 17:35
-                 * time : 20201004
+                 * sunrise : 07:00
+                 * sunset : 18:15
+                 * time : 20201023
                  */
 
                 private String sunrise;
@@ -3693,9 +3478,9 @@ public class TencentWeatherBean {
 
             public static class _$9Bean {
                 /**
-                 * sunrise : 05:50
-                 * sunset : 17:34
-                 * time : 20201005
+                 * sunrise : 07:01
+                 * sunset : 18:14
+                 * time : 20201024
                  */
 
                 private String sunrise;
@@ -3730,7 +3515,7 @@ public class TencentWeatherBean {
 
         public static class TipsBean {
             /**
-             * observe : {"0":"光芒透过云缝，洒向大地~","1":"现在的温度比较舒适~"}
+             * observe : {"0":"下雨了，出门记得带伞~","1":"现在的温度比较凉爽~"}
              */
 
             private ObserveBeanX observe;
@@ -3745,8 +3530,8 @@ public class TencentWeatherBean {
 
             public static class ObserveBeanX {
                 /**
-                 * 0 : 光芒透过云缝，洒向大地~
-                 * 1 : 现在的温度比较舒适~
+                 * 0 : 下雨了，出门记得带伞~
+                 * 1 : 现在的温度比较凉爽~
                  */
 
                 @SerializedName("0")
