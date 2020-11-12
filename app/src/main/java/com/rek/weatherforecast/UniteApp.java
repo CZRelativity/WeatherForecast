@@ -2,6 +2,8 @@ package com.rek.weatherforecast;
 
 import android.app.Application;
 
+import com.rek.weatherforecast.db.DBManager;
+
 import org.xutils.x;
 
 
@@ -16,5 +18,6 @@ public class UniteApp extends Application {
     public void onCreate() {
         super.onCreate();
         x.Ext.init(this);
+        DBManager.initDB(this);
     }
 }

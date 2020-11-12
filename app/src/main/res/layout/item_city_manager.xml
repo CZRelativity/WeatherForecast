@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/swipe_layout"
+    app:dragEdge="right"
+    app:mode="same_level">
+
+    <FrameLayout
+        android:id="@+id/delete_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#ffcc0000">
+
+        <ImageView
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_del"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/item_city_manager_front"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_city_manager_tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:text="北京"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_city_manager_tv_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="80dp"
+                android:text="12℃"
+                android:layout_marginTop="5dp"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/item_city_manager_line1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/item_city_manager_tv_temp" />
+
+            <TextView
+                android:id="@+id/item_city_manager_tv_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_city_manager_line1"
+                android:layout_marginStart="60dp"
+                android:text="晴"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/item_city_manager_line2"
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/item_city_manager_line1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@id/item_city_manager_tv_condition" />
+
+            <TextView
+                android:id="@+id/item_city_manager_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_city_manager_line1"
+                android:layout_toEndOf="@id/item_city_manager_line2"
+                android:text="西南风2级"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/item_city_manager_tempRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_city_manager_line1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="80dp"
+                android:text="16~9℃"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

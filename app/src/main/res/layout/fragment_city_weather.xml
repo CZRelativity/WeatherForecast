@@ -18,7 +18,7 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/frag_tv_currentTemperature"
+                android:id="@+id/frag_tv_temp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="25℃"
@@ -28,7 +28,7 @@
             <TextView
                 android:id="@+id/frag_tv_city"
                 style="@style/weatherText"
-                android:layout_below="@+id/frag_tv_currentTemperature"
+                android:layout_below="@+id/frag_tv_temp"
                 android:text="北京" />
 
             <TextView
@@ -61,7 +61,7 @@
                 android:background="#000" />
 
             <TextView
-                android:id="@+id/frag_tv_dayTemperature"
+                android:id="@+id/frag_tv_tempRange"
                 style="@style/weatherText"
                 android:layout_alignBottom="@id/frag_tv_wind"
                 android:layout_toEndOf="@id/frag_tv_divide"
